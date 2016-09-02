@@ -1,0 +1,20 @@
+{
+  "name": "stringifier",
+  "authors": [
+    "Codeworks"
+  ],
+  "description": "A Codeworks exercise to understand recursion and deep copying",
+  "license": "UNLICENSED",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.1"
+  }
+}

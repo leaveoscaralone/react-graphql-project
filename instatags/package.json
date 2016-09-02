@@ -1,0 +1,11 @@
+{
+  "name": "instatags",
+  "version": "1.0.0",
+  "description": "A Codeworks exercise to understand basic API interaction",
+  "author": "Codeworks",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1"
+  }
+}

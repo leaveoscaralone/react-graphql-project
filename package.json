@@ -1,0 +1,38 @@
+{
+  "name": "codeworks-full-stack-pre-course",
+  "version": "0.0.1",
+  "description": "The Codeworks Full Stack Pre Course Curriculum",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeworksbcn/pre-course.git"
+  },
+  "author": "Codeworks",
+  "license": "UNLICENSED",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/codeworksbcn/pre-course/issues"
+  },
+  "homepage": "https://github.com/codeworksbcn/pre-course#readme",
+  "devDependencies": {
+    "cz-changelog": "^1.0.1",
+    "del": "^2.2.2",
+    "eslint": "^3.3.1",
+    "eslint-plugin-json": "^1.2.0",
+    "ghooks": "^1.3.2",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-html-lint": "0.0.1",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-replace": "^0.5.4",
+    "gulp-stylelint": "^3.0.0",
+    "stylelint-config-standard": "^12.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "gulp lint"
+    }
+  }
+}
