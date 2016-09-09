@@ -1,5 +1,6 @@
 
 const gulp = require('gulp');
+const fs = require('fs');
 const del = require('del');
 const $ = require('gulp-load-plugins')();
 
@@ -17,18 +18,18 @@ function addDefSrcIgnore (srcArr) {
 }
 
 // Lint all files
-gulp.task('lint', ['js-lint', 'html-lint', 'css-lint']);
+gulp.task('lint', ['lint-js', 'lint-html', 'lint-css']);
 
 // JavaScript and JSON linter
-gulp.task('js-lint', function () {
+gulp.task('lint-js', function () {
   return gulp.src(addDefSrcIgnore(['**/*.js', '**/*.json']), {dot: true})
-    .pipe($.eslint())
+    .pipe($.eslint({dotfiles: true}))
     .pipe($.eslint.format())
     .pipe($.eslint.failAfterError());
 });
 
 // HTML linter
-gulp.task('html-lint', function () {
+gulp.task('lint-html', function () {
   return gulp.src(addDefSrcIgnore(['**/*.html']))
     .pipe($.htmlLint({htmllintrc: '.htmllintrc.json'}))
     .pipe($.htmlLint.format())
@@ -36,7 +37,7 @@ gulp.task('html-lint', function () {
 });
 
 // CSS linter
-gulp.task('css-lint', function () {
+gulp.task('lint-css', function () {
   return gulp.src(addDefSrcIgnore(['**/*.css']))
     .pipe($.stylelint({
       failAfterError: true,
@@ -46,10 +47,16 @@ gulp.task('css-lint', function () {
     }));
 });
 
-// Prepare files for distribution to students (remove solutions)
-gulp.task('dist', ['lint'], function () {
+// Remove solutions from exercises
+gulp.task('remove-solutions', ['lint'], function () {
   del.sync('dist');
-  gulp.src(addDefSrcIgnore(['**']), {dot: true})
+  return gulp.src(addDefSrcIgnore(['**']), {dot: true})
     .pipe($.replace(/^\s*(\/\/|<!--|\/\*)\s*REMOVE-START[\s\S]*?REMOVE-END\s*(\*\/|-->)?\s*$/gm, ''))
     .pipe(gulp.dest('dist'));
+});
+
+// Prepare for distribution to students
+gulp.task('dist', ['remove-solutions'], function () {
+  del.sync('dist/.eslintrc.json');
+  fs.renameSync('dist/.eslintrc-dist.json', 'dist/.eslintrc.json');
 });

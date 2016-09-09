@@ -16,7 +16,8 @@ gulp.task('watch', function () {
   gulp.watch([
     'index.html',
     'css/main.css',
-    'js/main.js'
+    'js/main.js',
+    'lib/instagram.js'
   ]).on('change', browserSync.reload);
 
 });

@@ -2,7 +2,7 @@
 
 // Allow tests to run on the server (leave at the top)
 if (typeof window === 'undefined') {
-  require('chai').should();
+  var should = require('chai').should();
   var _ = require('../index.js');
   var mocks = require('./mocks.js');
 }
@@ -362,7 +362,7 @@ describe('Collections', function () {
         el && res.push(el);
       });
       _.filter(mocks.halfTruthyArr, function (el, i, arr) {
-        arr[i].should.equal(el);
+        should.equal(arr[i], el);
         return el;
       }).should.eql(res);
       res = [];
@@ -370,7 +370,7 @@ describe('Collections', function () {
         val && res.push(val);
       });
       _.filter(mocks.halfTruthyObj, function (val, key, obj) {
-        obj[key].should.equal(val);
+        should.equal(obj[key], val);
         return val;
       }).should.eql(res);
     });
@@ -426,7 +426,7 @@ describe('Collections', function () {
         !el && res.push(el);
       });
       _.reject(mocks.halfTruthyArr, function (el, i, arr) {
-        arr[i].should.equal(el);
+        should.equal(arr[i], el);
         return el;
       }).should.eql(res);
       res = [];
@@ -434,7 +434,7 @@ describe('Collections', function () {
         !val && res.push(val);
       });
       _.reject(mocks.halfTruthyObj, function (val, key, obj) {
-        obj[key].should.equal(val);
+        should.equal(obj[key], val);
         return val;
       }).should.eql(res);
     });

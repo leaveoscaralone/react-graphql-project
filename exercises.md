@@ -36,6 +36,10 @@ Once Node is properly installed on your computer, to install [Bower](https://bow
 
 All the docs are written in [Markdown](https://guides.github.com/features/mastering-markdown/) format. If you’re not familiar with it yet, take a few minutes to figure out how it works (it should be quite easy for you at this point). Then install an editor / viewer on your computer, so you can enjoy a nicer formatting. Our favorite one is [Typora](https://www.typora.io/).
 
+### Code editor
+
+As mentioned in the theory section, we suggest you to use [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/). If you’re working with a Windows system, make sure the editor is set up to use Unix [line endings](https://en.wikipedia.org/wiki/Newline) by default before you open and save any repo file (otherwise it will generate many errors in the linter when you try to commit your work).
+
 ## Workflow
 
 Once your environment has been set up, you’re ready to work on the exercises. For starters, [fork](https://help.github.com/articles/fork-a-repo/) this repo on GitHub so you have a copy of it in your account. From this moment onwards, you’re only going to work on the fork and you can forget about the original repo.
@@ -61,13 +65,32 @@ As you’ll go through the exercises, get used to commit often. This will seem a
 
 Commit messages should be short and descriptive, possibly providing some context. For example, if you just implemented the `pluck` function in Underline, your commit message could look something like `underline add pluck`. 
 
-Some projects even try to create standards for commit messages (e.g. check the [Angular guidelines](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit)). To help keeping your commit messages tidy, consider using [Commitizen](https://github.com/commitizen/cz-cli) (`npm install -g commitizen`). All the steps described above would be exactly the same, apart from the last one. In fact in this case you create your commits using `git cz` instead.  Choose a change type from the menu that pops up, then press enter, type a short description using the present tense, then keep pressing enter and skip the next fields until your commit is done. If you decide to use Commitizen, keep in mind that you need to generate all your commits from the root folder of the repo.
+Some projects even try to create standards for commit messages (e.g. check the [Angular guidelines](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit)). To help keeping your commit messages tidy, consider using [Commitizen](https://github.com/commitizen/cz-cli) (`npm install -g commitizen`). All the steps described above would be exactly the same, apart from the last one. In fact in this case you create your commits using `git cz` instead.  Choose a change type from the menu that pops up, then press enter, type a short description using the present tense, then keep pressing enter and skip the next fields until your commit is done.
 
 ### Submitting your work
 
-Once you’ve completed the first coding assignment, before moving to the next one, push all your commits to `origin` (the forked repo you have on GitHub). Then go on GitHub and create a [pull request](https://help.github.com/articles/creating-a-pull-request/) from your fork to the original Codeworks repository (on the top you’ll see a button that says “New pull request“).
+Once you’ve completed the first coding assignment, before moving to the next one, push all your commits to `origin` (the forked repo you have on GitHub). Then check if your fork is in sync with the original pre course repo, by adding an upstream and pulling it with rebase.
 
-This way we can review your work and provide you feedback. When you complete the next exercises, just push your commits to `origin` and your previous pull request will automatically be updated. Keep in mind that you need to send all coding assignments as you complete them, before the main course starts.
+```shell
+# From the project folder check your current remotes:
+git remote -v
+
+# This should output something like:
+# origin  https://github.com/YOUR_USERNAME/pre-course.git (fetch)
+# origin  https://github.com/YOUR_USERNAME/pre-course.git (push)
+
+# Now add the upstream (afterwards check your remotes again if you like):
+git remote add upstream https://github.com/codeworksbcn/pre-course.git
+
+# Finally check if your fork is in sync by running a pull with rebase:
+git pull --rebase upstream master
+
+# Merge any conflicts if needed, otherwise you’re ready to send a pull request.
+```
+
+Then go on GitHub and create a [pull request](https://help.github.com/articles/creating-a-pull-request/) from your fork to the original Codeworks repository (on the top you’ll see a button that says “New pull request“).
+
+This way we can review your work and provide you feedback. When you complete the next exercises, check again if your fork is in sync with upstream as described above, then push your commits to `origin` and your previous pull request will automatically be updated. Keep in mind that you need to send all coding assignments as you complete them, before the main course starts.
 
 ## Start coding
 

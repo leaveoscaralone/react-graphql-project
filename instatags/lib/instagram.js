@@ -44,7 +44,7 @@ window.Instagram = new function () {
     $.ajax({
       url: _baseURL + 'users/' + id,
       data: requestData(),
-      success: function(response){
+      success: function (response) {
         cb(response.data);
       },
       dataType: 'jsonp'

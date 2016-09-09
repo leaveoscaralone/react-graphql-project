@@ -2,7 +2,7 @@
 
 ![instatags](images/instatags.jpg)
 
-Instatags is a small web app that shows an Instagram account, and provides some stats / filtering functionality for the most frequently used tags in itt.
+Instatags is a small web app that shows an Instagram account, and provides some stats / filtering functionality for its most frequently used tags.
 
 We have created all the app structure, but the code is not working at all. You need to fix it, editing the `js/main.js` file. Luckily there are comments everywhere to guide you through the code!
 

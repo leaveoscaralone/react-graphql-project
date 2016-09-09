@@ -4,6 +4,12 @@ This pre course is important, because it allows all students to have a solid com
 
 Keep in mind we’re providing two check-ins and support sessions with instructors along the way, to test your progress, help you clarify any doubts, and be sure you’re on track for success.
 
+Please get in touch with “<students@codeworks.me>” to schedule your support sessions in advance. A good measure is to have the first one within 4 to 2 weeks, and the second one within 2 to 1 week respectively before the main course starts.
+
+If you’re doing the support sessions remotely, please install [TeamViewer](https://www.teamviewer.com/en/), as we’ll need it to look at your code together and help debug any problem.
+
+In the meantime, you should have received an invite to the Codeworks Slack team (if not, please let us know by email). Make sure you keep the [Slack](https://slack.com/) app installed on your mobile phone (and you’re logged in, with notifications turned on), as from this point onwards we might use this channel to communicate instead of email, for anything that is time-sensitive or benefits from a group conversation.
+
 ## Course structure
 
 The pre course material is divided in two main parts: theory and exercises (as respectively described in the `theory.md`, and `exercises.md` files). We suggest you to start with theory sections from 1 to 6, and then do the exercises while you complete theory sections 7 and 8 on the side.
@@ -14,9 +20,9 @@ If a concept is not clear, look for extra information online (videos, tutorials,
 
 Another important resource is the “Intro to programming” [Facebook group](https://www.facebook.com/groups/269692903396564/): use it to interact with other students and get unstuck. Instructors loosely follow the conversation, and will help when needed.
 
-After having taken the above steps, make sure you keep a written list of anything that you still want to clarify, so you can discuss it with instructors during the support sessions. Our advice is to distribute the two sessions evenly as you progress through the pre course material. To book a session with instructors simply use any of the contact methods provided on [our website](https://codeworks.me/contacts).
+After having taken the above steps, make sure you keep a written list of anything that you still want to clarify, so you can discuss it with instructors during the support sessions. Our advice is to distribute the two sessions evenly as you progress through the pre course material.
 
-Finally, in case you find any bugs, broken links, typos, outdated info, or have feedback on how to improve this curriculum please send an email to “instructors@codeworks.me”, so we can keep making it better.
+Finally, in case you find any bugs, broken links, typos, outdated info, or have feedback on how to improve this curriculum please shoot an email to “<instructors@codeworks.me>”, so we can keep making it better.
 
 ### Extra credits
 

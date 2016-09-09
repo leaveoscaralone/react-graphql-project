@@ -9,8 +9,8 @@ function returnArgs () {
 var mocks = {
   arr: ['a','b','c','d'], // >= 4 elements, all should be truthy
   obj: {a:1,b:2,c:3,d:4}, // >= 4 values, all should be truthy
-  halfTruthyArr: [false,'b',false,'d'], // >= 4 elements, half should be false
-  halfTruthyObj: {a:1,b:false,c:3,d:false}, // >= 4 values, half should be false
+  halfTruthyArr: [null,'b',null,'d'], // >= 4 elements, half should be falsy
+  halfTruthyObj: {a:1,b:null,c:3,d:null}, // >= 4 values, half should be falsy
   string: 'This is a string.',
   reverseString: function (string) {
     if (typeof string === 'string') return string.split('').reverse().join('');

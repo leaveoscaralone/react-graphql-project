@@ -26,6 +26,7 @@ If you’re stuck on a specific test not passing, and can’t fix it, try to con
 - Inside every function you can access an [arguments object](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/arguments) (through the variable `arguments`), that is very similar to an array containing all arguments passed to the function at call time. The arguments object, differently from regular objects, exposes a `length` property like arrays and strings do.
 - Check out what  [`call()`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Function/call) and [`apply()`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) do, and why they’re used. In particular, what is the purpose of the `thisArg` (the context). For example, if you want to call [`slice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) on an arguments object you will need to use `Array.prototype.slice.call(arguments, begin, end)`.
 - Learn about JavaScript [prototypal inheritance](https://developer.mozilla.org/en/docs/Web/JavaScript/Inheritance_and_the_prototype_chain).
+- Notice the difference between the Boolean `true` and “[truthy](https://developer.mozilla.org/en/docs/Glossary/Truthy)” values. 
 - Finally, become familiar with [`setTimeout()`](https://developer.mozilla.org/en/docs/Web/API/WindowTimers/setTimeout) as you’ll need it to implement `delay()`, and it’s one of the two options that you have for `throttle()`.
 
 ## Extra credits
