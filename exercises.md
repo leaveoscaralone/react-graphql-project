@@ -24,6 +24,8 @@ If you have Windows or Linux, search on Google to figure out how to proceed.
 
 Install [Homebrew](http://brew.sh/), then run `brew install git`. Now [set up](https://help.github.com/articles/set-up-git/) your local Git installation, and create an account on [GitHub](https://github.com/).
 
+If you’re working with a Windows system run `git config --global core.autocrlf false`.
+
 ### Node
 
 Make sure your user’s home folder has a `.bash_profile` file (if it doesn’t exist create it using `cd ~ && touch .bash_profile`). Now install [nvm](https://github.com/creationix/nvm), close your terminal window and open it again. Type `nvm install node`.
@@ -38,7 +40,9 @@ All the docs are written in [Markdown](https://guides.github.com/features/master
 
 ### Code editor
 
-As mentioned in the theory section, we suggest you to use [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/). If you’re working with a Windows system, make sure the editor is set up to use Unix [line endings](https://en.wikipedia.org/wiki/Newline) by default before you open and save any repo file (otherwise it will generate many errors in the linter when you try to commit your work).
+As mentioned in the theory section, we suggest you to use [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/).
+
+If you’re working with a Windows system, make sure the editor is set up to use Unix [line endings](https://en.wikipedia.org/wiki/Newline) by default before you open and save any repo file (otherwise it will generate many errors in the linter when you try to commit your work).
 
 ## Workflow
 

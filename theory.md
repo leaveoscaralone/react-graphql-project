@@ -12,13 +12,13 @@ A text editor is to coders what a brush is to painters. If you master how to use
 
 Here’s a brief list of the most popular editors out there:
 
-[Vim](http://www.vim.org/), [Emacs](https://www.gnu.org/software/emacs/), [Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/), [Brackets](http://brackets.io/), [Visual Studio](https://www.visualstudio.com/).
+[Vim](http://www.vim.org/), [Emacs](https://www.gnu.org/software/emacs/), [Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/), [Visual Studio](https://www.visualstudio.com/), [Brackets](http://brackets.io/).
 
 We mention Vim and Emacs first, because they’ve been around for a very long time. Also, Vim is present in all Unix systems and most Linux editions. Having said this, both editors are powerful but not particularly user-friendly at the beginning.
 
-Sublime Text and Atom are great editors to get started, and we’re going to use them throughout most of the course. Atom has the advantage of being open-source and having a large community behind, but like Brackets and Visual Studio it executes in a browser view, so it’s not as fast in performing complex operations (e.g. searching for a string in a large amount of files) as Sublime Text is, due to its pure desktop architecture.
+Sublime Text and Atom are great editors to get started, and we’re going to use them throughout most of the course. Atom (like Brackets and Visual Studio) has the advantage of being free and open-source, but it executes in a browser view, so it’s not as performant with complex operations (e.g. handling very large files) as Sublime Text is, due to its pure desktop architecture.
 
-No matter which editor you end up choosing, make sure to master it and become very comfortable writing code without getting your hands off the keyboard most of the time. In particular, learn how to:
+No matter which editor you end up choosing, make sure to master it and become very comfortable writing code without having to take your hands off the keyboard most of the time. In particular, learn how to:
 
 - Move the cursor, or select text, by increments of words and entire lines
 - Increase and decrease indentation for blocks of code

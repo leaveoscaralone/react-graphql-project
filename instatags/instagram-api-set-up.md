@@ -6,7 +6,7 @@
 4. Click on the “Register a New Client” button.
 5. Fill the form with random values that describe your app (“Instatags” could be a good start).
 6. In the “Valid redirect URIs” field type `http://localhost:8080/utilities/get-token.html`.
-7. Go to the security section and make sure that “Disable implicit Oauth option” is checked.
+7. Go to the security section and make sure that “Disable implicit Oauth option” is not checked.
 8. Click on the “Register” button to create the client.
 9. In the “Manage clients” section, find the client you just created and click on the “Manage” button.
 10. Go to the “Sandbox” tab and add `instagrames` as a sandbox user. Then save the changes.

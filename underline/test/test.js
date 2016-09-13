@@ -659,6 +659,21 @@ describe('Collections', function () {
 
 describe('Functions', function () {
 
+  describe('once', function () {
+
+    it('should call the function only, and return the same result in following calls', function () {
+      var called = 0;
+      var onced = _.once(function (string) {
+        called ++;
+        return mocks.reverseString(string);
+      });
+      onced(mocks.string).should.equal(mocks.reversedString);
+      onced(mocks.reversedString).should.equal(mocks.reversedString);
+      called.should.equal(1);
+    });
+
+  });
+
   describe('memoize', function () {
 
     it('should cache already computed results', function () {
