@@ -57,6 +57,14 @@ gulp.task('remove-solutions', ['lint'], function () {
 
 // Prepare for distribution to students
 gulp.task('dist', ['remove-solutions'], function () {
-  del.sync('dist/.eslintrc.json');
-  fs.renameSync('dist/.eslintrc-dist.json', 'dist/.eslintrc.json');
+
+  const npmConfig = require('./package.json');
+  npmConfig.config.ghooks['pre-commit'] = 'gulp lint';
+  fs.writeFileSync('dist/package.json', JSON.stringify(npmConfig, null, 2));
+
+  const esLintConfig = require('./.eslintrc.json');
+  esLintConfig.rules['no-undef'] = 'off';
+  esLintConfig.rules['no-unused-vars'] = 'off';
+  fs.writeFileSync('dist/.eslintrc.json', JSON.stringify(esLintConfig, null, 2));
+
 });

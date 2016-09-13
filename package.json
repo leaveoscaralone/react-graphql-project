@@ -1,7 +1,10 @@
 {
   "name": "codeworks-full-stack-pre-course",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "The Codeworks Full Stack Pre Course Curriculum",
+  "scripts": {
+    "test": "(cd underline && npm test) && (cd stringifier && npm test)"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codeworksbcn/pre-course.git"

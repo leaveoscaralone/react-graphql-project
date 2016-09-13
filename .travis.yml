@@ -1,21 +1,11 @@
 language: node_js
-node_js: "6.3.0"
+node_js: "node"
 cache:
   directories:
     - node_modules
     - underline/node_modules
-    - underline/bower_components
     - stringifier/node_modules
-    - stringifier/bower_components
     - instatags/node_modules
-    - instatags/bower_components
-before_install:
-  - npm install -g bower
 install:
-  - npm install
-  - cd underline && npm install && bower install && cd ../
-  - cd stringifier && npm install && bower install && cd ../
-  - cd instatags && npm install && bower install && cd ../
-script:
-  - cd underline && npm run test && cd ../
-  - cd stringifier && npm run test && cd ../
+  - (cd underline && npm install)
+  - (cd stringifier && npm install)

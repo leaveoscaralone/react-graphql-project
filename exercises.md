@@ -40,7 +40,7 @@ All the docs are written in [Markdown](https://guides.github.com/features/master
 
 ### Code editor
 
-As mentioned in the theory section, we suggest you to use [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/).
+As mentioned in the theory section, we suggest you to use [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/). Set up your editor to indent with 2 spaces, and remove trailing whitespace. Then follow our [coding style guide](https://github.com/codeworksbcn/style-guide).
 
 If you’re working with a Windows system, make sure the editor is set up to use Unix [line endings](https://en.wikipedia.org/wiki/Newline) by default before you open and save any repo file (otherwise it will generate many errors in the linter when you try to commit your work).
 

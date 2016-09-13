@@ -7,17 +7,27 @@
     "mocha": true
   },
   "extends": "eslint:recommended",
-  "parserOptions": {"sourceType": "module"},
-  "plugins": ["json"],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": [
+    "json"
+  ],
   "rules": {
-    "indent": ["error", 2],
+    "indent": [
+      "error",
+      2
+    ],
     "keyword-spacing": "error",
     "linebreak-style": "error",
-    "no-undef": "off",
-    "no-unused-vars": "off",
-    "quotes": ["error","single"],
+    "quotes": [
+      "error",
+      "single"
+    ],
     "semi": "error",
     "space-before-blocks": "error",
-    "space-before-function-paren": "error"
+    "space-before-function-paren": "error",
+    "no-undef": "off",
+    "no-unused-vars": "off"
   }
 }
