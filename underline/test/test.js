@@ -702,13 +702,13 @@ describe('Functions', function () {
 
   describe('delay', function () {
 
-    it('should delay the execution of a function', function (done) {
+    it('should delay the execution of a function, and pass arguments when provided', function (done) {
       var called = 0;
       var string = mocks.string;
-      _.delay(function () {
+      _.delay(function (str) {
         called ++;
-        string = mocks.reverseString(string);
-      }, 50);
+        string = mocks.reverseString(str);
+      }, 50, mocks.string);
       called.should.equal(0);
       string.should.equal(mocks.string);
       setTimeout(function () {
