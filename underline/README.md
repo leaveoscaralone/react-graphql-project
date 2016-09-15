@@ -27,7 +27,7 @@ If you’re stuck on a specific test not passing, and can’t fix it, try to con
 - Check out what  [`call()`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Function/call) and [`apply()`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) do, and why they’re used. In particular, what is the purpose of the `thisArg` (the context). For example, if you want to call [`slice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) on an arguments object you will need to use `Array.prototype.slice.call(arguments, begin, end)`.
 - Learn about JavaScript [prototypal inheritance](https://developer.mozilla.org/en/docs/Web/JavaScript/Inheritance_and_the_prototype_chain).
 - Notice the difference between the Boolean `true` and “[truthy](https://developer.mozilla.org/en/docs/Glossary/Truthy)” values. 
-- Finally, become familiar with [`setTimeout()`](https://developer.mozilla.org/en/docs/Web/API/WindowTimers/setTimeout) as you’ll need it to implement `delay()`, and it’s one of the two options that you have for `throttle()`.
+- Finally, become familiar with [`setTimeout()`](https://developer.mozilla.org/en/docs/Web/API/WindowTimers/setTimeout) as you’ll need it to implement `delay()`, and it’s one of the two options that you have for `throttle()`. If you end up using it in these exercises, don’t prefix it with `window`, as it would make tests fail in the server since `window` is undefined in Node. 
 
 ## Extra credits
 
