@@ -4,11 +4,17 @@ This pre course is important, because it allows all students to have a solid com
 
 Keep in mind we’re providing two check-ins and support sessions with instructors along the way, to test your progress, help you clarify any doubts, and be sure you’re on track for success.
 
+### Communications
+
 Please get in touch with “<students@codeworks.me>” to schedule your support sessions in advance. A good measure is to have the first one within 4 to 2 weeks, and the second one within 2 to 1 week respectively before the main course starts.
 
 If you’re doing the support sessions remotely, please install [TeamViewer](https://www.teamviewer.com/en/), as we’ll need it to look at your code together and help debug any problem.
 
 In the meantime, you should have received an invite to the Codeworks Slack team (if not, please let us know by email). Make sure you keep the [Slack](https://slack.com/) app installed on your mobile phone (and you’re logged in, with notifications turned on), as from this point onwards we might use this channel to communicate instead of email, for anything that is time-sensitive or benefits from a group conversation.
+
+### Equipment
+
+To attend the main course you need to bring a laptop computer. If you consider buying a new one, as a Codeworks student you have access to [Apple discounts for Education](http://www.apple.com/es-edu/shop). For this to apply you need to be in Barcelona and either attending classes at our campus or about to start. The request to Apple needs to originate from our office, so in case get in touch by email and we’ll help you out.
 
 ## Course structure
 
