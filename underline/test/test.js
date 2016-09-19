@@ -158,6 +158,7 @@ describe('Collections', function () {
 
     it('should iterate over an array', function () {
       _.each(mocks.arr, function (el, i, arr) {
+        (typeof i).should.equal('number');
         arr[i].should.equal(el);
         called = true;
       });
