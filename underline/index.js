@@ -33,7 +33,7 @@ _.extend = function (destination, source) {
 
 };
 
-// _.defaults(object, default)
+// _.defaults(destination, source)
 // Fills in undefined properties in the destination object
 // with own enumerable properties present in the source object,
 // and returns the destination object.
