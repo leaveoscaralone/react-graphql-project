@@ -7,15 +7,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codeworksbcn/pre-course.git"
+    "url": "codeworksbcn/pre-course"
   },
   "author": "Codeworks",
   "license": "UNLICENSED",
   "private": true,
-  "bugs": {
-    "url": "https://github.com/codeworksbcn/pre-course/issues"
-  },
-  "homepage": "https://github.com/codeworksbcn/pre-course#readme",
   "devDependencies": {
     "cz-changelog": "^1.0.1",
     "del": "^2.2.2",

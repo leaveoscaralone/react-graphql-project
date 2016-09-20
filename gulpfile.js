@@ -58,7 +58,15 @@ gulp.task('remove-solutions', ['lint'], function () {
 // Prepare for distribution to students
 gulp.task('dist', ['remove-solutions'], function () {
 
+  function removeMaster (str) {
+    var strArr = str.split('-');
+    strArr[strArr.length - 1] === 'master' && strArr.pop();
+    return strArr.join('-');
+  }
+
   const npmConfig = require('./package.json');
+  npmConfig.name = removeMaster(npmConfig.name);
+  npmConfig.repository.url = removeMaster(npmConfig.repository.url);
   npmConfig.config.ghooks['pre-commit'] = 'gulp lint';
   fs.writeFileSync('dist/package.json', JSON.stringify(npmConfig, null, 2));
 
