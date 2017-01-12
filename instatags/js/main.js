@@ -70,7 +70,7 @@ $(function () {
     }
 
     // Finally we have to sort the array in descending order (higher frequencies first),
-    // and return it. Check the "Array.prototype.sort()"docs, and
+    // and return it. Check the "Array.prototype.sort()" docs, and
     // figure out how to create the right sort function.
 
   };

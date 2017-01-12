@@ -8,7 +8,7 @@ For each exercise you find a separate folder in the repository, containing a rea
 
 Whenever you’re stuck, feel free to look for information online (e.g. checking docs on [MDN](https://developer.mozilla.org/en/docs/Web), or reading answers on [Stack Overflow](http://stackoverflow.com/)). Make sure you don’t search for the entire exercise solution, as this would obviously defeat the course purpose.
 
-For example, when you’re implementing the `_.each()` function in Underline you might search online for information like “js iterate over object ignoring prototype“, but not things like “js how to implement each“. 
+For example, when you’re implementing the `_.each()` function in Underline you might search online for information like “js iterate over object ignoring prototype“, but not things like “js how to implement each“.
 
 For the same reason obviously you’re not supposed to look up / copy the source code from an existing library, or from solutions implemented by other students.
 
@@ -22,7 +22,7 @@ If you have Windows or Linux, search on Google to figure out how to proceed.
 
 ### Git
 
-Install [Homebrew](http://brew.sh/), then run `brew install git`. Now [set up](https://help.github.com/articles/set-up-git/) your local Git installation, and create an account on [GitHub](https://github.com/).
+Install [Homebrew](http://brew.sh/), then run `brew install git`. Now [set up](https://help.github.com/articles/set-up-git/) your local Git installation, create an account on [GitHub](https://github.com/), and [set up authentication](https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git).
 
 If you’re working with a Windows system run `git config --global core.autocrlf false`.
 
@@ -67,7 +67,7 @@ As you’ll go through the exercises, get used to commit often. This will seem a
 -  Finally create your commit using `git commit`.
 
 
-Commit messages should be short and descriptive, possibly providing some context. For example, if you just implemented the `pluck` function in Underline, your commit message could look something like `underline add pluck`. 
+Commit messages should be short and descriptive, possibly providing some context. For example, if you just implemented the `pluck` function in Underline, your commit message could look something like `underline add pluck`.
 
 Some projects even try to create standards for commit messages (e.g. check the [Angular guidelines](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit)). To help keeping your commit messages tidy, consider using [Commitizen](https://github.com/commitizen/cz-cli) (`npm install -g commitizen`). All the steps described above would be exactly the same, apart from the last one. In fact in this case you create your commits using `git cz` instead.  Choose a change type from the menu that pops up, then press enter, type a short description using the present tense, then keep pressing enter and skip the next fields until your commit is done.
 

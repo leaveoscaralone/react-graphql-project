@@ -102,4 +102,3 @@ Once you have completed all the pre course curriculum, if you have free time lef
 
 - Chapters 5-7 of the [Discover Dev Tools course](http://discover-devtools.codeschool.com/)
 - Start taking a look at frameworks ([Node](https://nodejs.org/en/about/), [Express](https://expressjs.com/), [Koa](http://koajs.com/), [Angular](https://angular.io/), [React](https://facebook.github.io/react/), [Polymer](https://www.polymer-project.org/), [Meteor](https://www.meteor.com/))
-

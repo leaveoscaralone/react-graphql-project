@@ -30,4 +30,3 @@ console.log(typeof JSON.stringify(['hello', 3])) // -> string
 ## Extra credit
 
 - Implement [`JSON.parse()`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse), and try to write a good unit tests suite for it. Keep in mind that this requires way more work than the first part.
-

@@ -662,7 +662,7 @@ describe('Functions', function () {
 
   describe('once', function () {
 
-    it('should call the function only, and return the same result in following calls', function () {
+    it('should call the function only once, and return the same result in following calls', function () {
       var called = 0;
       var onced = _.once(function (string) {
         called ++;
