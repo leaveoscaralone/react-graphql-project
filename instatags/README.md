@@ -10,8 +10,6 @@ We have created all the app structure, but the code is not working at all. You n
 
 To install the required dependencies run `npm install && bower install` from the project folder.
 
-To use the Instagram API you first need to set up a new client and get an access token, following the instructions you find in `instagram-api-setup.md`.
-
 Now you can run the `gulp` command from the project folder: this will launch a server that hosts the app, open the browser on the homepage, and automagically reload the page any time you modify a js, html, or css file.
 
 ## Tips

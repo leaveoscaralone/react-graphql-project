@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "data": {
+    "id": "200482",
+    "counts": {
+      "media": 194,
+      "follows": 253,
+      "followed_by": 234
+    },
+    "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/13686980_1752391845037583_1672280724_a.jpg",
+    "bio": "",
+    "username": "aroldus",
+    "full_name": "aroldus",
+    "website": ""
+  }
+}

@@ -5,7 +5,7 @@ $(function () {
 
   // This is @instagrames account ID, the instragrammer that
   // we're following for this coding assignment.
-  var USER_ID = '1935616974';
+  var USER_ID = '200482';
 
   window.Instagram.getUser(USER_ID, function (data) {
     // Here you need to call the renderUserInfo() function.
