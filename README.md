@@ -8,9 +8,7 @@ Keep in mind we’re providing two check-ins and support sessions with instructo
 
 Please get in touch with “<students@codeworks.me>” to schedule your support sessions in advance. A good measure is to have the first one within 4 to 2 weeks, and the second one within 2 to 1 week respectively before the main course starts.
 
-If you’re doing the support sessions remotely, please install [TeamViewer](https://www.teamviewer.com/en/), as we’ll need it to look at your code together and help debug any problem.
-
-In the meantime, you should have received an invite to the Codeworks Slack team (if not, please let us know by email). Make sure you keep the [Slack](https://slack.com/) app installed on your mobile phone (and you’re logged in, with notifications turned on), as from this point onwards we might use this channel to communicate instead of email, for anything that is time-sensitive or benefits from a group conversation.
+You should have received an invite to the Codeworks Slack team (if not, please let us know by email). Make sure you keep the [Slack](https://slack.com/) app installed on your mobile phone (and you’re logged in, with notifications turned on), as from this point onwards we might use this channel to communicate instead of email, for anything that is time-sensitive or benefits from a group conversation.
 
 ### Equipment
 

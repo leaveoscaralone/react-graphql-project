@@ -1,6 +1,6 @@
 {
   "name": "codeworks-pre-course",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "The Codeworks Full Stack Pre Course Curriculum",
   "scripts": {
     "test": "(cd underline && npm test) && (cd stringifier && npm test)"
