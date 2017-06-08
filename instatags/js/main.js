@@ -147,7 +147,7 @@ $(function () {
       a.data('tag', tag);
       // Here you need to bind the click event of the "a" tag to the "clickTag" function.
       // Then, go to the function declaration to fix it.
-      a.bind('click', clickTag); //REMOVE
+
     });
   };
 
