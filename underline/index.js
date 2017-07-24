@@ -27,8 +27,8 @@ _.uniq = function (array) {
 // OBJECTS
 
 // _.extend(destination, source)
-// Copies all the own enumerable properties in the source object
-// over to the destination object, and returns it.
+// Copies all the own enumerable properties in the source object over
+// to the destination object, and returns it (without using `Object.assign`).
 _.extend = function (destination, source) {
 
 };
