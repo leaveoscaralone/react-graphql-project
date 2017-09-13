@@ -51,7 +51,7 @@ gulp.task('lint-css', function () {
 gulp.task('remove-solutions', ['lint'], function () {
   del.sync('dist');
   return gulp.src(addDefSrcIgnore(['**']), {dot: true})
-    .pipe($.replace(/^\s*(\/\/|<!--|\/\*)\s*REMOVE-START[\s\S]*?REMOVE-END\s*(\*\/|-->)?\s*$/gm, ''))
+    .pipe($.replace(/^\s*(\/\/|<!--|\/\*)\s*REMOVE-START[\s\S]*?REMOVE-END\s*(\*\/|-->)?\s*$/gm, '', {skipBinary: true}))
     .pipe(gulp.dest('dist'));
 });
 
