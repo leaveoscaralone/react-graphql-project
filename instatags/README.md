@@ -23,4 +23,5 @@ This is a quick overview of the project structure. You don’t actually need to 
 ## Extra credits
 
 - Add a first link `#all tags (count)` in the “filter” area, to remove any tag selection and show all images.
+- Add [Underscore](http://underscorejs.org/) or [Lodash](https://lodash.com/) via Bower / CDN, and refactor Instatags using the features provided by the library where convenient.
 - Make the app [responsive](https://en.wikipedia.org/wiki/Responsive_web_design) (i.e. it should look good on all device sizes).
