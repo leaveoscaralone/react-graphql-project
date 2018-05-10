@@ -1,18 +1,19 @@
 {
-  "meta": {
-    "code": 200
-  },
   "data": {
     "id": "200482",
-    "counts": {
-      "media": 194,
-      "follows": 253,
-      "followed_by": 234
-    },
-    "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/13686980_1752391845037583_1672280724_a.jpg",
-    "bio": "",
     "username": "aroldus",
+    "profile_picture": "https://scontent.cdninstagram.com/vp/0ff7cc41db27708b44332807e42ed5e3/5B807A34/t51.2885-19/s150x150/13686980_1752391845037583_1672280724_a.jpg",
     "full_name": "aroldus",
-    "website": ""
+    "bio": "",
+    "website": "",
+    "is_business": false,
+    "counts": {
+      "media": 195,
+      "follows": 299,
+      "followed_by": 278
+    }
+  },
+  "meta": {
+    "code": 200
   }
 }
