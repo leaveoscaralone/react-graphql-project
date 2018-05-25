@@ -300,6 +300,10 @@ describe('Collections', function () {
         obj[key].should.equal(val);
         return accumulator.toString() + val.toString();
       }).should.equal(mocks.stringifiedObjValues);
+      _.reduce(mocks.obj, function (accumulator, val, key, obj) {
+        obj[key].should.equal(val);
+        return accumulator + val;
+      }).should.equal(mocks.sumObjValues);
     });
 
     it('should support initial state', function () {

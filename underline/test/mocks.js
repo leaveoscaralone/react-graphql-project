@@ -25,6 +25,8 @@ mocks.objValuesArr = mocks.objKeysArr.map(function (key) {
 });
 mocks.stringifiedObjKeys = mocks.objKeysArr.join('');
 mocks.stringifiedObjValues = mocks.objValuesArr.join('');
+mocks.sumObjValues = Object.keys(mocks.obj).reduce((acc, el) =>
+  acc += mocks.obj[el],0);
 mocks.halfTruthyObjKeysArr = Object.keys(mocks.halfTruthyObj);
 mocks.halfTruthyObjValuesArr = mocks.halfTruthyObjKeysArr.map(function (key) {
   return mocks.halfTruthyObj[key];
