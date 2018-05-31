@@ -1,8 +1,10 @@
 # Codeworks Pre Course Curriculum
 
-This pre course is important, because it allows all students to have a solid common ground when the main course starts.
+This pre course is important, because it allows students to have a solid common ground when the main course starts.
 
-Keep in mind we’re providing two check-ins and support sessions with instructors along the way, to test your progress, help you clarify any doubts, and be sure you’re on track for success.
+Understanding the theory part and solving the exercises included here is required for you to proceed to the main course. Keep in mind that not completing this material leads to rescheduling or canceling your main course.
+
+We’re providing two check-ins and support sessions with instructors along the way, to test your progress, help you clarify any doubts, and be sure you’re on track for success.
 
 ### Communications
 

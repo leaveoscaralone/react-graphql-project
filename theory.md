@@ -12,11 +12,11 @@ A text editor is to coders what a brush is to painters. If you master how to use
 
 Here’s a brief list of the most popular editors out there:
 
-[Vim](http://www.vim.org/), [Emacs](https://www.gnu.org/software/emacs/), [Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/), [Visual Studio](https://www.visualstudio.com/), [Brackets](http://brackets.io/).
+[Vim](http://www.vim.org/), [Emacs](https://www.gnu.org/software/emacs/), [Atom](https://atom.io/), [VS Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), [Brackets](http://brackets.io/).
 
 We mention Vim and Emacs first, because they’ve been around for a very long time. Also, Vim is present in all Unix systems and most Linux editions. Having said this, both editors are powerful but not particularly user-friendly at the beginning.
 
-Sublime Text and Atom are great editors to get started, and we’re going to use them throughout most of the course. Atom (like Brackets and Visual Studio) has the advantage of being free and open-source, but it executes in a browser view, so it’s not as performant with complex operations (e.g. handling very large files) as Sublime Text is, due to its pure desktop architecture.
+Atom, Visual Studio, and Sublime Text are great editors to get started, and we’re going to use them throughout most of the course.
 
 No matter which editor you end up choosing, make sure to master it and become very comfortable writing code without having to take your hands off the keyboard most of the time. In particular, learn how to:
 
@@ -29,7 +29,11 @@ No matter which editor you end up choosing, make sure to master it and become ve
 - Use advanced search, and substitute multiple string matches at the same time
 - Customize the graphical aspect of your code editor (color scheme, font, etc.)
 
-Have a look at the [Perfect Workflow in Sublime Text](http://code.tutsplus.com/courses/perfect-workflow-in-sublime-text-2), or [Atom 101](https://medium.com/@arolet/atom-101-for-javascript-development-5406684100b3) to understand the above concepts.
+These tutorials for the respective editors might be useful to understand the above concepts:
+
+- [Atom](https://flight-manual.atom.io/using-atom/)
+- [VS Code](https://code.visualstudio.com/docs)
+- [Sublime Text](https://sublimetutor.com/)
 
 ## 2. Get familiar with online documentation (2 hrs)
 
@@ -101,4 +105,4 @@ For CSS, study the following topics:
 Once you have completed all the pre course curriculum, if you have free time left to study before joining the main course, continue your journey with these subjects:
 
 - Chapters 5-7 of the [Discover Dev Tools course](http://discover-devtools.codeschool.com/)
-- Start taking a look at frameworks ([Node](https://nodejs.org/en/about/), [Express](https://expressjs.com/), [Koa](http://koajs.com/), [Angular](https://angular.io/), [React](https://facebook.github.io/react/), [Polymer](https://www.polymer-project.org/), [Meteor](https://www.meteor.com/))
+- Start taking a look at frameworks ([Node](https://nodejs.org/en/about/), [Express](https://expressjs.com/), [Koa](http://koajs.com/), [React](https://reactjs.org/), [Angular](https://angular.io/))
