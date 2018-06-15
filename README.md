@@ -1,20 +1,22 @@
 # Codeworks Pre Course Curriculum
 
-This pre course is important, because it allows students to have a solid common ground when the main course starts.
-
-Understanding the theory part and solving the exercises included here is required for you to proceed to the main course. Keep in mind that not completing this material leads to rescheduling or canceling your main course.
+This pre course is important, because it allows students to have a solid common ground when the main course starts. Understanding the theory part and solving the exercises included here is required for you to proceed to the main course.
 
 We’re providing two check-ins and support sessions with instructors along the way, to test your progress, help you clarify any doubts, and be sure you’re on track for success.
 
+Be aware that not completing this material and not attending both support sessions leads to rescheduling or canceling your main course.
+
 ### Communications
 
-Please get in touch with “<students@codeworks.me>” to schedule your support sessions in advance. A good measure is to have the first one within 4 to 2 weeks, and the second one within 2 to 1 week respectively before the main course starts.
+Please get in touch with “<students@codeworks.me>” to schedule your support sessions in advance. Make sure you have the first one at least 4 to 3 weeks, and the second one at least 2 to 1 week respectively before the main course starts.
+
+For each support session you need to have progressed with code in exercises, and bring a list of topics you want to clarify. Failing to do so raises flags about your ability to attend the course.
 
 You should have received an invite to the Codeworks Slack team (if not, please let us know by email). Make sure you keep the [Slack](https://slack.com/) app installed on your mobile phone (and you’re logged in, with notifications turned on), as from this point onwards we might use this channel to communicate instead of email, for anything that is time-sensitive or benefits from a group conversation.
 
 ### Equipment
 
-To attend the main course you need to bring a laptop computer. If you consider buying a new one, as a Codeworks student you have access to [Apple discounts for Education](http://www.apple.com/es-edu/shop). For this to apply you need to be in Barcelona and either attending classes at our campus or about to start. The request to Apple needs to originate from our office, so in case get in touch by email and we’ll help you out.
+To attend the main course you need to bring a laptop computer. If you consider buying a new one, as a Codeworks student you have access to [Apple discounts for Education](http://www.apple.com/es-edu/shop) (~10% reduction from the regular price). To apply this you need to be in Barcelona and either attending classes at our campus or about to start. The request to Apple needs to originate from our office, so in case get in touch by email and we’ll help you out.
 
 ## Course structure
 
