@@ -53,7 +53,7 @@ For example, if you don’t remember how the `Array.splice()` method works, you 
 
 The developer tools are a great way to inspect and debug your web apps, besides helping you understand how the JavaScript interpreter works and how the code you write is executed.
 
-To pass this section go through chapters 1-4 of the [Discover Dev Tools course](http://discover-devtools.codeschool.com/).
+To learn this, go through the first two sections (CSS and JavaScript) of the [Chrome DevTools tutorial](https://developers.google.com/web/tools/chrome-devtools/).
 
 ## 4. To regex, or not to regex (3 hrs)
 
