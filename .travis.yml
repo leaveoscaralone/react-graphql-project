@@ -3,9 +3,3 @@ node_js: "node"
 cache:
   directories:
     - node_modules
-    - underline/node_modules
-    - stringifier/node_modules
-    - instatags/node_modules
-install:
-  - (cd underline && npm install)
-  - (cd stringifier && npm install)

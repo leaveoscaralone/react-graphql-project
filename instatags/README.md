@@ -8,7 +8,7 @@ We have created all the app structure, but the code is not working at all. You n
 
 ## Getting started
 
-To install the required dependencies run `npm install && bower install` from the project folder.
+To install the required dependencies run `npm install` from the project folder.
 
 Now you can run the `gulp` command from the project folder: this will launch a server that hosts the app, open the browser on the homepage, and automagically reload the page any time you modify a js, html, or css file.
 

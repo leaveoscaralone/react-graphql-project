@@ -8,7 +8,7 @@ Modern browsers provide built-in functions that replicate some of the functions 
 
 ## Getting started
 
-To install the required dependencies, run `npm install && bower install` from the project folder.
+To install the required dependencies, run `npm install` from the project folder.
 
 To run the tests simply open `index.html` in your browser. After you add or modify some code in `index.js` save it and refresh the page in your browser to run the tests again.
 

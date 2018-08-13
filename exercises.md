@@ -30,9 +30,9 @@ If you’re working with a Windows system run `git config --global core.autocrlf
 
 Make sure your user’s home folder has a `.bash_profile` file (if it doesn’t exist create it using `cd ~ && touch .bash_profile`). Now install [nvm](https://github.com/creationix/nvm), close your terminal window and open it again. Type `nvm install node`.
 
-### Bower and Gulp
+### Gulp
 
-Once Node is properly installed on your computer, to install [Bower](https://bower.io/) and [Gulp](http://gulpjs.com/) just type `npm install -g bower gulp-cli`.
+Once Node is properly installed on your computer, to install [Gulp](http://gulpjs.com/) just type `npm install -g gulp-cli`.
 
 ### Markdown
 
@@ -40,7 +40,7 @@ All the docs are written in [Markdown](https://guides.github.com/features/master
 
 ### Code editor
 
-As mentioned in the theory section, we suggest you to use [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/). Set up your editor to indent with 2 spaces, and remove trailing whitespace. Then follow our [coding style guide](https://github.com/codeworksbcn/style-guide).
+As mentioned in the theory section, we suggest you to use [Atom](https://atom.io/) or [VS Code](https://code.visualstudio.com/). Set up your editor to indent with 2 spaces, and remove trailing whitespace. Then follow our [coding style guide](https://github.com/codeworksbcn/style-guide).
 
 If you’re working with a Windows system, make sure the editor is set up to use Unix [line endings](https://en.wikipedia.org/wiki/Newline) by default before you open and save any repo file (otherwise it will generate many errors in the linter when you try to commit your work).
 
