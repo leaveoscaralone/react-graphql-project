@@ -1,11 +1,10 @@
 {
   "name": "codeworks-pre-course",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "The Codeworks Full Stack Pre Course Curriculum",
   "scripts": {
-    "precommit": "gulp lint && npm test",
-    "test": "mocha underline/test && mocha stringifier/test",
-    "pre-commit": "gulp lint"
+    "precommit": "gulp lint",
+    "test": "mocha underline/test && mocha stringifier/test"
   },
   "repository": {
     "type": "git",
