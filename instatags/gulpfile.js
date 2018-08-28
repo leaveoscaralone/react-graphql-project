@@ -5,8 +5,13 @@ var browserSync = require('browser-sync').create();
 // Static server
 gulp.task('browser-sync', function () {
   browserSync.init({
-    server: {baseDir: './'},
-    port: 8080
+    server: {
+      baseDir: './',
+      routes: {
+        '/node_modules': '../node_modules',
+      }
+    },
+    port: 8080,
   });
 });
 
