@@ -2,11 +2,11 @@
 
 For this exercise you’ll be reimplementing [`JSON.stringify()`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify).
 
-[JSON](https://en.wikipedia.org/wiki/JSON) is a data format that is used to transfer information between different entities (e.g. a client and a server, or two separate pieces of software).
+[JSON](https://en.wikipedia.org/wiki/JSON) is a data format that is used to “serialize” data (i.e. translate a data structure into a string) to transfer information between different entities (e.g. a client and a server, or two separate pieces of software).
 
 JSON syntax is very close to JavaScript objects, so it will look completely familiar to you.
 
-Most programming languages can translate data to JSON and then “stringify” it (i.e. transform it all into a single string). The reason is that, once you have a string, you can transfer this data wherever you need it, and then parse the string back to the original data. This communication can also happen between different programming languages.
+Most modern programming languages can translate data to JSON, and parse it back. This also allows to pass information between different programming languages.
 
 We’ve written a list of unit tests that your implementation needs to pass. In the initial state of the repository most of these tests are failing. You need to open `index.js` and add the missing code in there to make all tests pass (obviously without using `JSON.stringify()`).
 
