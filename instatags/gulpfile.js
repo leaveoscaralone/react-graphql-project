@@ -1,4 +1,3 @@
-
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 
@@ -8,23 +7,18 @@ gulp.task('browser-sync', function () {
     server: {
       baseDir: './',
       routes: {
-        '/node_modules': '../node_modules',
+        '/node_modules': '../node_modules'
       }
     },
-    port: 8080,
+    port: 8080
   });
 });
 
 // Watch files and reload browser on change
 gulp.task('watch', function () {
-
-  gulp.watch([
-    'index.html',
-    'css/main.css',
-    'js/main.js',
-    'lib/instagram.js'
-  ]).on('change', browserSync.reload);
-
+  gulp
+    .watch(['index.html', 'css/main.css', 'js/main.js', 'lib/instagram.js'])
+    .on('change', browserSync.reload);
 });
 
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', gulp.series('browser-sync', 'watch'));
