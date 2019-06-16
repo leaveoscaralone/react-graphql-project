@@ -1,3 +1,7 @@
+// Due to changes to the Instagram API, this library no longer queries
+// the actual API. Instead it returns mock data stored in a .json object,
+// which exactly simulates a real API response.
+
 window.Instagram = new function () {
 
   /**

@@ -18,7 +18,7 @@ This is a quick overview of the project structure. You don’t actually need to 
 
 - The main view is in `index.html`. This is the file you see in the browser.
 - The project’s CSS rules are in `css/main.css`.
-- We prepared a minimal utility library to interact with the Instagram API. You don’t need to understand the implementation details ([separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)). On the other hand, if you feel curious go check the file `lib/instagram.js` and read the inline documentation to figure out how it works.
+- We prepared a minimal utility library to simulate the Instagram API. You don’t need to understand the implementation details ([separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)). On the other hand, if you feel curious go check the file `lib/instagram.js` and read the inline documentation to figure out how it works.
 
 ## Extra credits
 
