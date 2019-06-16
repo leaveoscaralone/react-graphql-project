@@ -53,7 +53,7 @@ For example, if you don’t remember how the `Array.splice()` method works, you 
 
 The developer tools are a great way to inspect and debug your web apps, besides helping you understand how the JavaScript interpreter works and how the code you write is executed.
 
-To learn this, go through the first two sections (CSS and JavaScript) of the [Chrome DevTools tutorial](https://developers.google.com/web/tools/chrome-devtools/).
+To learn this, go through the “CSS”, “DOM”, and “JavaScript” sections of the [Chrome DevTools tutorial](https://developers.google.com/web/tools/chrome-devtools/).
 
 ## 4. To regex, or not to regex (3 hrs)
 
@@ -73,7 +73,7 @@ Make sure you understand why it’s used, and how it works.
 
 For this section we’ll provide you with 3 resources:
 
-- Start with the [Try Git](https://try.github.io/) tutorial
+- Do all the interactive lessons of the [Learn Git](https://www.codecademy.com/learn/learn-git) course on Codeacademy (not the “pro” projects).
 - Then go through “Getting Started”, “Collaborating”, and “Advanced Tips” of the [Atlassian Git](https://www.atlassian.com/git/) docs
 - Finally read chapters 1-3 of the [Pro Git](https://git-scm.com/book/en/v2/) book
 
@@ -104,5 +104,6 @@ For CSS, study the following topics:
 
 Once you have completed all the pre course curriculum, if you have free time left to study before joining the main course, continue your journey with these subjects:
 
-- Chapters 5-7 of the [Discover Dev Tools course](http://discover-devtools.codeschool.com/)
+- “Network”, “Storage”, “Mobile Simulation”, and “Performance” sections of the [Chrome DevTools tutorial](https://developers.google.com/web/tools/chrome-devtools/).
 - Start taking a look at frameworks ([Node](https://nodejs.org/en/about/), [Express](https://expressjs.com/), [Koa](http://koajs.com/), [React](https://reactjs.org/), [Angular](https://angular.io/))
+
