@@ -1,27 +1,27 @@
 $(function () {
 
+  // We need the user media throughout our code, so we store it in the outer scope.
   var userMedia;
-  var sortedTags;
 
   // This is @instagrames account ID, the instragrammer that
   // we're following for this coding assignment.
   var USER_ID = '200482';
 
-  window.Instagram.getUser(USER_ID, function (data) {
+  window.Instagram.getUser(USER_ID, function (userData) {
     // Here you need to call the renderUserInfo() function.
     // As you guess from its name, it's used to render the user information on page.
     // Can you figure out what parameter you should to pass to it?
-    // If you do things right you'll see the profile picture appear.
+    // If you do things right, you'll see the profile picture appear.
 
     // Mmm... what about the other user info? Go fix the renderUserInfo function!
   });
 
-  window.Instagram.getUserRecentMedia(USER_ID, function (data) {
+  window.Instagram.getUserRecentMedia(USER_ID, function (media) {
     // We'll need this userMedia later...
-    userMedia = data;
+    userMedia = media;
     // Here we're rendering the user pictures. But something is not
     // ok in this function. Let's go there and fix it.
-    renderUserMedia(data);
+    renderUserMedia(media);
 
     // Now that our project starts to look fancy let's add a bit of extra
     // functionality to it. We'll show a list with all the user's hashtags.
@@ -29,53 +29,60 @@ $(function () {
     // When the user clicks on a hashtag, we'll filter the pictures shown on page
     // to include only the ones that have that hashtag.
 
-    // First we need to collect all the hashtags and sort them by frequency,
-    // let's go to the function and fix it.
-    sortedTags = evalHashtagFrequency(data);
+    // First we need to collect all the hashtags.
+    var tags = extractTagsFromMedia(media);
+
+    // Next, we want to sort them by frequency.
+    // Look at the function and try to figure out how!
+    var sortedTags = sortTagsByFrequencyDesc(tags);
 
     // Mmm... these are a lot of hashtags! Can you implement a function
     // that filters the array to include only the most relevant hashtags?
-    // The function should take 2 arguments: (tagsArr, minFreq)
-    // where tagsArr is the sorted array of hashtags, and minFreq
+    // The function should take 2 arguments: (tags, minFrequency)
+    // where "tags" is the sorted array of hashtags, and "minFrequency"
     // is a number representing the minimum frequency allowed.
     // It returns a new array of hastags with frequency equal or above the set limit.
-    // Here replace sortedTags with the new filtered array.
 
     // Guess what? Another render function that is broken!
     // Let's go and fix it.
-    renderSortedTags(sortedTags);
+    renderTags(filteredTags);
   });
 
-  var evalHashtagFrequency = function (data) {
+  function extractTagsFromMedia (media) {
     // Here we create an object with all the hashtags as keys.
     // Then assign the value of every key to the frequency of that tag.
-    var tags = {};
-    data.forEach(function (media) {
-      media.tags.forEach(function (tag) {
-        if (tags[tag]) {
-          tags[tag]++;
+    var tagFrequency = {};
+    media.forEach(function (mediaItem) {
+      mediaItem.tags.forEach(function (tagId) {
+        if (tagFrequency[tagId]) {
+          tagFrequency[tagId]++;
         } else {
-          tags[tag] = 1;
+          tagFrequency[tagId] = 1;
         }
       });
     });
 
     // Here we transform this object into an array, so we'll be able to sort it.
-    var sortable = [];
-    for (var tag in tags) {
-      sortable.push({
-        tag: tag,
-        frequency: tags[tag]
-      });
-    }
+    // Object.keys() returns an array of all the keys in an object.
+    // In this case, an array with all our tag ids.
+    var tags = Object.keys(tagFrequency).map(function (tagId) {
+      return {
+        id: tagId,
+        frequency: tagFrequency[tagId]
+      };
+    });
+    return tags;
+  }
 
-    // Finally we have to sort the array in descending order (higher frequencies first),
-    // and return it. Check the "Array.prototype.sort()" docs, and
-    // figure out how to create the right sort function.
+  // Finally we have to sort the array in descending order (higher frequencies first),
+  // and return it. Check the "Array.prototype.sort()" docs, and
+  // figure out how to create the right sort function.
+  // 💯 Extra credit: Change the function, so it doesn't modify the original array!
+  function sortTagsByFrequencyDesc (tags) {
 
-  };
+  }
 
-  var renderUserInfo = function (user) {
+  function renderUserInfo (user) {
     // This is how the user profile picture is rendered.
     $('#user img').attr('src', user.profile_picture);
 
@@ -84,15 +91,15 @@ $(function () {
     // need to show the number of followers, follows, and posted images.
 
     // Once you're done here, take a look at the Instagram.getUserRecentMedia() callback.
-  };
+  }
 
-  var renderUserMedia = function (data) {
+  function renderUserMedia (media) {
     // First of all we need to remove all the content of the .user-media div.
     // Btw, you might need to do something similar later in other functions,
     // and we're not going to mention it, it's up to you to figure out when!
     $('.user-media').html('');
 
-    data.forEach(function (media) {
+    media.forEach(function (mediaItem) {
       // Let's create an empty div element with jQuery. In this div we'll show
       // a picture. Notice that since we're in a forEach "loop",
       // we're creating a div for every picture provided by the API.
@@ -117,13 +124,13 @@ $(function () {
       // fixing this function. Btw, we're not going to mention this anymore,
       // as by now navigating code should look familiar to you.
     });
-  };
+  }
 
-  var renderSortedTags = function (data) {
+  function renderTags (tags) {
     var tagList = $('.tag-list ul');
 
     // Let's iterate over all the tags in the list.
-    data.forEach(function (tag) {
+    tags.forEach(function (tag) {
       // First, you need to create an empty "a" link tag with jQuery. Remember the div we
       // created earlier in this assignment? It should give you some inspiration.
       // Then fill this tag content with the hashtag itself and its frequency.
@@ -138,35 +145,35 @@ $(function () {
 
       // Now let's add a bit of action. We want the user to be able to filter the images
       // by clicking on the tags in the list. For this we need to bind the click event
-      // on the "a" tag to the "clickTag" function we have here below.
+      // on the "a" tag to the "handleClickTag" function we have here below.
       // When the user clicks on the link though, we need to know what tag he clicked on.
-      // To makes things simpler, jQuery lets us save any extra data connected to elements.
+      // To makes things simpler, jQuery lets us save additional information inside the html element.
       // For example the line below records an association between each "a" element (remember
-      // we're in a "forEach" loop) and the tag they refer to.
-      // We'll be using this in a moment inside the "clickTag" function.
-      a.data('tag', tag);
-      // Here you need to bind the click event of the "a" tag to the "clickTag" function.
+      // we're in a "forEach" loop) and the tag id it refers to.
+      // We'll be using this in a moment inside the "handleClickTag" function.
+      a.data('tagId', tag.id);
+      // Here you need to bind the click event of the "a" tag to the "handleClickTag" function.
       // Then, go to the function declaration to fix it.
 
     });
-  };
+  }
 
-  var clickTag = function (e) {
+  function handleClickTag (event) {
     // This is a handler function that is bound to the click event. jQuery will call this function,
     // passing the event information, when one of the links we prepared before is clicked.
-    // The event information (you could name it as you wish, "e" is just a shortcut for "event")
-    // among other data contains the target: the link that was clicked. So, we can cast
-    // the HTML element that was clicked into a jQuery object by doing the following.
-    var link = $(e.target);
+    // The event object, among other data, contains the target: the link that was clicked.
+    // among other data contains the target: the link that was clicked.
+    // So, we can cast the HTML element that was clicked into a jQuery object by doing the following.
+    var link = $(event.target);
 
     // Now we can retrieve the tag data stored in it.
-    var tag = link.data('tag').tag;
+    var tagId = link.data('tagId');
 
     // Once we know what tag the user clicked, we can filter the images. You need to create
     // a function that returns an array containing only images with a certain tag.
 
     // Ok, finally you can re-render the filtered media here!
 
-  };
+  }
 
 });
