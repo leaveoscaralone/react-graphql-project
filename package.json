@@ -1,13 +1,13 @@
 {
   "name": "codeworks-pre-course",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "description": "The Codeworks Full Stack Pre Course Curriculum",
   "scripts": {
     "test": "mocha underline/test && mocha stringifier/test"
   },
   "repository": {
     "type": "git",
-    "url": "codeworksbcn/pre-course"
+    "url": "codeworks/pre-course"
   },
   "author": "Codeworks",
   "license": "UNLICENSED",

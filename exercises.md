@@ -40,7 +40,7 @@ All the docs are written in [Markdown](https://guides.github.com/features/master
 
 ### Code editor
 
-As mentioned in the theory section, we suggest you to use [Atom](https://atom.io/) or [VS Code](https://code.visualstudio.com/). Set up your editor to indent with 2 spaces, and remove trailing whitespace. Then follow our [coding style guide](https://github.com/codeworksbcn/style-guide).
+As mentioned in the theory section, we suggest you to use [Atom](https://atom.io/) or [VS Code](https://code.visualstudio.com/). Set up your editor to indent with 2 spaces, and remove trailing whitespace. Then follow our [coding style guide](https://github.com/codeworks/style-guide).
 
 If you’re working with a Windows system, make sure the editor is set up to use Unix [line endings](https://en.wikipedia.org/wiki/Newline) by default before you open and save any repo file (otherwise it will generate many errors in the linter when you try to commit your work).
 
@@ -84,7 +84,7 @@ git remote -v
 # origin  https://github.com/YOUR_USERNAME/pre-course.git (push)
 
 # Now add the upstream (afterwards check your remotes again if you like):
-git remote add upstream https://github.com/codeworksbcn/pre-course.git
+git remote add upstream https://github.com/codeworks/pre-course.git
 
 # Finally check if your fork is in sync by running a pull with rebase:
 git pull --rebase upstream master
