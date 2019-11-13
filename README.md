@@ -22,12 +22,6 @@ For starters, you need to have the [Chrome browser](https://www.google.com/chrom
 
 As you progress throughout this course you will be required to install other software.
 
-### Support sessions
-
-While you are working on the pre course, you have access to a weekly video call with other coursemates and instructors to check your progress, help you get unstuck, and answer any questions you have.
-
-These calls are optional but highly recommended. In order to participate you need to sign up for each session in advance through [this calendar](https://calendly.com/codeworks-instructors/support-session).
-
 ## Course structure
 
 The pre course material is divided in two main parts: theory and exercises (as respectively described in the `theory.md`, and `exercises.md` files). We suggest you to start with theory sections from 1 to 6, and then do the exercises while you complete theory sections 7 and 8 on the side.
@@ -50,4 +44,4 @@ These sections are not mandatory, and can take a long time to complete, but offe
 
 ## Ready, set, go!
 
-Ok, now you should be ready to start digging into `theory.md`!
+Ok, now you should be ready to start digging into `theory.md`

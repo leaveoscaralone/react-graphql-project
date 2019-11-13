@@ -4,7 +4,7 @@ There are three coding assignments you need to complete as part of the Codeworks
 
 For each exercise you find a separate folder in this repository, containing a readme file with instructions.
 
-## Online help
+## Help
 
 Whenever you’re stuck, feel free to look for information online (e.g. checking docs on [MDN](https://developer.mozilla.org/en/docs/Web), or reading answers on [Stack Overflow](http://stackoverflow.com/)). Make sure you don’t search for the entire exercise solution, as this would obviously defeat the course purpose.
 
@@ -13,6 +13,12 @@ For example, when you’re implementing the `_.each()` function in Underline you
 For the same reason obviously you’re not supposed to look up / copy the source code from an existing library, or from solutions implemented by other students.
 
 On the other hand, you’re more than welcome to interact with fellow students and instructors, posting questions on Slack.
+
+### Support sessions
+
+Once you start writing some code, you have access to a weekly video call with other coursemates and instructors to check your progress, help you get unstuck, and answer any questions you have.
+
+These calls are optional but highly recommended. In order to participate you need to sign up for each session in advance through [this calendar](https://calendly.com/codeworks-instructors/support-session).
 
 ## Setting up your environment
 
