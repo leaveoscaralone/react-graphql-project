@@ -2,7 +2,7 @@
 
 There are three coding assignments you need to complete as part of the Codeworks pre course curriculum: Underline, Stringifier, and Instatags (go through them in this order).
 
-For each exercise you find a separate folder in the repository, containing a readme file with instructions.
+For each exercise you find a separate folder in this repository, containing a readme file with instructions.
 
 ## Online help
 
@@ -12,23 +12,27 @@ For example, when you’re implementing the `_.each()` function in Underline you
 
 For the same reason obviously you’re not supposed to look up / copy the source code from an existing library, or from solutions implemented by other students.
 
-On the other hand, you’re more than welcome to interact with fellow students and instructors, posting questions on our “Intro to programming” [Facebook group](https://www.facebook.com/groups/269692903396564/)!
+On the other hand, you’re more than welcome to interact with fellow students and instructors, posting questions on Slack.
 
 ## Setting up your environment
 
-To be able to do the coding assignments, you need to have the following software installed on your computer. Here we provide instructions for Mac computers, using the native Terminal app or [HyperTerm](https://hyperterm.org/).
+To be able to do the coding assignments, you need to have the following software installed on your computer. Here we provide instructions for Mac computers, using the native Terminal app or [Hyper](https://hyper.is/).
 
-If you have Windows or Linux, search on Google to figure out how to proceed.
+If you have Windows or Linux, search instructions on Google to figure out how to proceed.
+
+### Terminal
+
+Install [Homebrew](http://brew.sh/) and [oh-my-zsh](https://ohmyz.sh/).
 
 ### Git
 
-Install [Homebrew](http://brew.sh/), then run `brew install git`. Now [set up](https://help.github.com/articles/set-up-git/) your local Git installation, create an account on [GitHub](https://github.com/), and [set up authentication](https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git).
+Set up [authentication](https://help.github.com/en/github/getting-started-with-github/set-up-git#next-steps-authenticating-with-github-from-git).
 
 If you’re working with a Windows system run `git config --global core.autocrlf false`.
 
 ### Node
 
-Make sure your user’s home folder has a `.bash_profile` file (if it doesn’t exist create it using `cd ~ && touch .bash_profile`). Now install [nvm](https://github.com/creationix/nvm), close your terminal window and open it again. Type `nvm install node`.
+Install [nvm](https://github.com/creationix/nvm), close your terminal window and open it again. Type `nvm install node`.
 
 ### Gulp
 
@@ -40,7 +44,7 @@ All the docs are written in [Markdown](https://guides.github.com/features/master
 
 ### Code editor
 
-As mentioned in the theory section, we suggest you to use [Atom](https://atom.io/) or [VS Code](https://code.visualstudio.com/). Set up your editor to indent with 2 spaces, and remove trailing whitespace. Then follow our [coding style guide](https://github.com/codeworks/style-guide).
+Set up your editor to indent with 2 spaces, and remove trailing whitespace. Then follow our [coding style guide](https://github.com/codeworks/style-guide).
 
 If you’re working with a Windows system, make sure the editor is set up to use Unix [line endings](https://en.wikipedia.org/wiki/Newline) by default before you open and save any repo file (otherwise it will generate many errors in the linter when you try to commit your work).
 

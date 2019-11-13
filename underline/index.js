@@ -106,7 +106,7 @@ _.reject = function (collection, predicate, context) {
 // (element, index|key, collection), and bound to the context if one is passed.
 // Short-circuits and stops traversing the list if a false element is found.
 // TIP: without the short-circuiting you could reuse _.reduce(). Can you figure how?
-// Because of the short-circuiting though, you need to re-implement a modified _.each().
+// Because of the short-circuiting though, you need to implement it in a similar way as you did at _.each.
 _.every = function (collection, predicate, context) {
 
 };

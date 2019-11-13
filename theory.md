@@ -4,7 +4,7 @@ This is the theory part of the Codeworks pre course curriculum.
 
 The order in which topics are presented has a meaning, although it’s not completely strict. Some students prefer to tackle a couple topics together, switching between them as they progress, while others prefer to focus on one subject at a time. Find what works best for you.
 
-Next to each section we indicate an estimate of how many hours should approximately take you to complete it. Depending on your familiarity with the topic, it might actually take more or less time: don’t worry about it, just make sure you understand the subject well.
+Next to each section we indicate an estimate of how many hours should be approximately required to complete it. Depending on your familiarity with the topic, it can take more or less time: don’t worry about it, just make sure you understand the subject well.
 
 ## 1. Become an editor guru (5 hrs)
 
@@ -12,28 +12,26 @@ A text editor is to coders what a brush is to painters. If you master how to use
 
 Here’s a brief list of the most popular editors out there:
 
-[Vim](http://www.vim.org/), [Emacs](https://www.gnu.org/software/emacs/), [Atom](https://atom.io/), [VS Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), [Brackets](http://brackets.io/).
+[Vim](http://www.vim.org/), [Emacs](https://www.gnu.org/software/emacs/), [Atom](https://atom.io/), [VS Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/).
 
-We mention Vim and Emacs first, because they’ve been around for a very long time. Also, Vim is present in all Unix systems and most Linux editions. Having said this, both editors are powerful but not particularly user-friendly at the beginning.
+We mention Vim and Emacs first, because they’ve been around for a very long time. Also, Vim is installed by default on all Unix systems and most Linux editions. Having said this, both editors are powerful but not particularly user-friendly at the beginning.
 
-Atom, Visual Studio, and Sublime Text are great editors to get started, and we’re going to use them throughout most of the course.
+Atom, Visual Studio, and Sublime Text are great editors to get started.
 
-No matter which editor you end up choosing, make sure to master it and become very comfortable writing code without having to take your hands off the keyboard most of the time. In particular, learn how to:
+During the course we’re going to use VS Code: [install it](https://code.visualstudio.com/download) on your computer and add the [Live Share plugin](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare).
+
+Make sure to master your editor and become very comfortable writing code without having to take your hands off the keyboard most of the time. In particular, learn how to:
 
 - Move the cursor, or select text, by increments of words and entire lines
 - Increase and decrease indentation for blocks of code
 - Use syntax highlighting and a code linter
 - Comment and un-comment code
 - Use auto-completion
-- Quickly execute the code you’re editing (“build”)
+- Quickly execute the code you’re editing (i.e. “build”)
 - Use advanced search, and substitute multiple string matches at the same time
 - Customize the graphical aspect of your code editor (color scheme, font, etc.)
 
-These tutorials for the respective editors might be useful to understand the above concepts:
-
-- [Atom](https://flight-manual.atom.io/using-atom/)
-- [VS Code](https://code.visualstudio.com/docs)
-- [Sublime Text](https://sublimetutor.com/)
+You can find an intro to these topics and more advanced ones though [this tutorial](https://code.visualstudio.com/docs/getstarted/tips-and-tricks).
 
 ## 2. Get familiar with online documentation (2 hrs)
 
@@ -49,11 +47,16 @@ Take some time to explore these platforms and become very familiar with them: ev
 
 For example, if you don’t remember how the `Array.splice()` method works, you just need to google “mdn array splice“, and read the docs. If you have doubts regarding a coding problem, you can look for answers on Stack Overflow or ask a new question there. If you don’t know a jQuery method signature, google it and check a code example.
 
-## 3. Learn how to use Chrome developer tools (8 hrs)
+## 3. Learn how to use the Chrome developer tools (8 hrs)
 
 The developer tools are a great way to inspect and debug your web apps, besides helping you understand how the JavaScript interpreter works and how the code you write is executed.
 
-To learn this, go through the “CSS”, “DOM”, and “JavaScript” sections of the [Chrome DevTools tutorial](https://developers.google.com/web/tools/chrome-devtools/).
+To learn this, go through the following sections of the [Chrome DevTools tutorial](https://developers.google.com/web/tools/chrome-devtools/):
+
+- CSS
+- Console
+- DOM
+- JavaScript
 
 ## 4. To regex, or not to regex (3 hrs)
 
@@ -73,7 +76,7 @@ Make sure you understand why it’s used, and how it works.
 
 For this section we’ll provide you with 3 resources:
 
-- Do all the interactive lessons of the [Learn Git](https://www.codecademy.com/learn/learn-git) course on Codeacademy (not the “pro” projects).
+- Do all the interactive lessons of the [Git-it app](https://github.com/jlord/git-it-electron) (you can [download it here](https://github.com/jlord/git-it-electron/releases))
 - Then go through “Getting Started”, “Collaborating”, and “Advanced Tips” of the [Atlassian Git](https://www.atlassian.com/git/) docs
 - Finally read chapters 1-3 of the [Pro Git](https://git-scm.com/book/en/v2/) book
 
@@ -81,7 +84,7 @@ Once you’re done, start doing the exercises while you complete the remaining t
 
 ## 7. Intermediate JavaScript (16 hrs)
 
-Complete Eloquent JavaScript chapters 1-10.
+Complete [Eloquent JavaScript](https://eloquentjavascript.net/) chapters 1-10.
 
 In particular, make sure you understand these concepts well:
 
