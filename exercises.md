@@ -2,6 +2,8 @@
 
 There are three coding assignments you need to complete as part of the Codeworks pre course curriculum: Underline, Stringifier, and Instatags (go through them in this order).
 
+Consider that the first one is going to take you at least double the time than each of the other two to complete.
+
 For each exercise you find a separate folder in this repository, containing a readme file with instructions.
 
 ## Help
