@@ -141,11 +141,11 @@ _.pluck = function (collection, propertyName) {
 // FUNCTIONS
 
 // _.once(func)
-// Creates a version of the function that can only be called one time.
-// Repeated calls to the modified function will have no effect,
-// returning the value from the original call.
-// Any extra arguments passed to once will be forwarded on to the function invocation.
-// Useful for initialization functions, instead of having to set a boolean flag and then check it later.
+// Creates a version of the function that can only be called one time
+// (with any arguments). Repeated calls to the modified function
+// will have no effect, returning the value from the original call.
+// Useful for initialization functions, instead of having to set
+// a boolean flag and then check it later.
 _.once = function (func) {
 
 };
@@ -171,11 +171,10 @@ _.delay = function (func, wait) {
 
 // _.throttle(function, wait)
 // Returns a new, throttled version of the passed function that,
-// when invoked repeatedly, will only call the original function
-// at most once per every wait milliseconds, and otherwise will
-// just return the last computed result. Useful for rate-limiting
-// events that occur faster than you can keep up with.
-// Any extra arguments passed to throttle will be forwarded on to the function invocation.
+// when invoked repeatedly (with any arguments), calls the original function
+// at most once every wait milliseconds, and otherwise just returns
+// the last computed result. Useful for rate-limiting events
+// that occur faster than you can keep up with.
 _.throttle = function (func, wait) {
 
 };

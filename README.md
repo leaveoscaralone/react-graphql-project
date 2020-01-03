@@ -12,7 +12,7 @@ You should have received an invite to the Codeworks Slack team (if not, please l
 
 To attend the course you need a laptop computer, with camera, mic, and speakers, to allow video calls and participate in live lectures.
 
-If you signed up for an on-site course, you also need to bring a pair of headphones or earphones with microphone. If they are battery-powered, make sure they can last for at least two hours.
+If you signed up for an on-site course, you also need to bring a pair of noise-isolating or noise-cancelling earphones or headphones, with microphone. If they are battery-powered, make sure they can last for at least two hours.
 
 In case you want to buy new equipment, as a Codeworks on-site student you are entitled to [Apple discounts for Education](https://github.com/codeworks/students-handbook/wiki/Discounts).
 
