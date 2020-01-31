@@ -1,8 +1,9 @@
 {
   "name": "codeworks-pre-course",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "The Codeworks Full Stack Pre Course Curriculum",
   "scripts": {
+    "precommit": "gulp lint",
     "test": "mocha underline/test && mocha stringifier/test"
   },
   "repository": {
@@ -38,7 +39,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "gulp lint"
+      "pre-commit": "npm run precommit"
     }
   },
   "dependencies": {

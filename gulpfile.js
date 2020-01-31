@@ -50,6 +50,7 @@ function removeSolutions () {
 // Prepare for distribution to students
 function updateConfigForSlave (done) {
   let npmConfig = require('./package.json');
+  npmConfig.scripts.precommit = 'gulp lint';
   npmConfig = JSON.stringify(npmConfig, null, 2).replace(/-master/g, '');
   fs.writeFileSync('dist/package.json', npmConfig);
   const esLintConfig = require('./.eslintrc.json');
