@@ -1,6 +1,6 @@
 # Codeworks Pre Course Exercises
 
-There are three coding assignments you need to complete as part of the Codeworks pre course curriculum: Underline, Stringifier, and Instatags (go through them in this order).
+There are three exercises that you need to complete as part of the Codeworks pre course curriculum: Underline, Stringifier, and Instatags (go through them in this order).
 
 Consider that the first one is going to take you at least double the time than each of the other two to complete.
 
@@ -24,7 +24,7 @@ These calls are optional but highly recommended. In order to participate you nee
 
 ## Setting up your environment
 
-To be able to do the coding assignments, you need to have the following software installed on your computer. Here we provide instructions for Mac computers, using the native Terminal app or [Hyper](https://hyper.is/).
+To be able to do the exercises, you need to have the following software installed on your computer. Here we provide instructions for Mac computers, using the native Terminal app or [Hyper](https://hyper.is/).
 
 If you have Windows or Linux, search instructions on Google to figure out how to proceed.
 
@@ -85,6 +85,8 @@ Some projects even try to create standards for commit messages (e.g. check the [
 
 ### Submitting your work
 
+You’re required to submit the completed pre-course exercises at least one week before the main course starts. Otherwise your attendance is rescheduled for future cohorts.
+
 Once you’ve completed the first coding assignment, before moving to the next one, push all your commits to `origin` (the forked repo you have on GitHub). Then check if your fork is in sync with the original pre course repo, by adding an upstream and pulling it with rebase.
 
 ```shell
@@ -104,9 +106,9 @@ git pull --rebase upstream master
 # Merge any conflicts if needed, otherwise you’re ready to send a pull request.
 ```
 
-Then go on GitHub and create a [pull request](https://help.github.com/articles/creating-a-pull-request/) from your fork to the original Codeworks repository (on the top you’ll see a button that says “New pull request“).
+To submit your work, go on GitHub and create a [pull request](https://help.github.com/articles/creating-a-pull-request/) from your fork to the original Codeworks repository (on the top you’ll see a button that says “New pull request“).
 
-This way we can review your work and provide you feedback. When you complete the next exercises, check again if your fork is in sync with upstream as described above, then push your commits to `origin` and your previous pull request will automatically be updated. Keep in mind that you need to send all coding assignments as you complete them, before the main course starts.
+When you complete the next exercises, check again if your fork is in sync with upstream as described above, then push your commits to `origin` and your previous pull request will automatically be updated.
 
 ## Start coding
 

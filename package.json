@@ -1,6 +1,6 @@
 {
   "name": "codeworks-pre-course",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "The Codeworks Full Stack Pre Course Curriculum",
   "scripts": {
     "test": "mocha underline/test && mocha stringifier/test"
