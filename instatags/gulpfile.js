@@ -1,8 +1,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 
-// Static server
-gulp.task('browser-sync', function () {
+function browserSyncTask () {
   browserSync.init({
     server: {
       baseDir: './',
@@ -12,13 +11,12 @@ gulp.task('browser-sync', function () {
     },
     port: 8080
   });
-});
+  gulp.watch([
+    './index.html',
+    './css/main.css',
+    './js/main.js',
+    './lib/instagram.js'
+  ]).on('change', browserSync.reload);
+}
 
-// Watch files and reload browser on change
-gulp.task('watch', function () {
-  gulp
-    .watch(['index.html', 'css/main.css', 'js/main.js', 'lib/instagram.js'])
-    .on('change', browserSync.reload);
-});
-
-gulp.task('default', gulp.series('browser-sync', 'watch'));
+exports.default = browserSyncTask;

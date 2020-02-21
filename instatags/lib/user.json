@@ -8,9 +8,9 @@
     "website": "",
     "is_business": false,
     "counts": {
-      "media": 195,
-      "follows": 302,
-      "followed_by": 287
+      "media": "195",
+      "follows": "302",
+      "followed_by": "287"
     }
   },
   "meta": {

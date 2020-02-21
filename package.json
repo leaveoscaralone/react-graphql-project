@@ -1,10 +1,10 @@
 {
   "name": "codeworks-pre-course",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "description": "The Codeworks Full Stack Pre Course Curriculum",
   "scripts": {
     "precommit": "gulp lint",
-    "test": "mocha underline/test && mocha stringifier/test"
+    "test": "mocha underline/test && mocha stringifier/test && mocha instatags/test"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,8 @@
     "gulp-stylelint": "^9.0.0",
     "gulp-util": "3.0.8",
     "husky": "^2.3.0",
+    "jsdom": "^16.2.0",
+    "jsdom-global": "^3.0.2",
     "mocha": "^6.1.4",
     "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.3.0"

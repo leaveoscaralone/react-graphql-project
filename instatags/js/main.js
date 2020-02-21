@@ -40,12 +40,15 @@ $(function () {
     // that filters the array to include only the most relevant hashtags?
     // The function should take 2 arguments: (tags, minFrequency)
     // where "tags" is the sorted array of hashtags, and "minFrequency"
-    // is a number representing the minimum frequency allowed.
+    // is a number representing the minimum frequency allowed, in this case, we will pass 2.
     // It returns a new array of hastags with frequency equal or above the set limit.
 
     // Guess what? Another render function that is broken!
     // Let's go and fix it.
     renderTags(filteredTags);
+
+    // Used for testing (feel free to ignore it)
+    window.pageIsReady && window.pageIsReady();
   });
 
   function extractTagsFromMedia (media) {

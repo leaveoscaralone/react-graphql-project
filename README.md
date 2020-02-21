@@ -8,6 +8,8 @@ Be aware that not completing this material leads to rescheduling or canceling yo
 
 You should have received an invite to the Codeworks Slack team (if not, please let us know by email). Make sure you keep the [Slack](https://slack.com/) app installed on your mobile phone (logged in, with notifications turned on), as from this point onwards we might use this channel to communicate instead of email, for anything that is time-sensitive or benefits from a group conversation.
 
+Because we operate in different time zones, some channels can have messages posted at any time of the day or night. To avoid being disturbed while you sleep, we suggest to set your phone on silent or airplane mode, or simply [snooze all Slack notifications](https://slack.com/help/articles/218551977-Reduce-noise-in-Slack#do-not-disturb) for the time needed.
+
 ### Equipment
 
 To attend the course you need a laptop computer, with camera, mic, and speakers, to allow video calls and participate in live lectures.
