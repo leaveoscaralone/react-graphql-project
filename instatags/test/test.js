@@ -39,13 +39,17 @@ describe('Instatags', () => {
   });
 
   it('should render tags filtered by minimum frequency of 2', () => {
-    $('.tag-list ul li').length.should.equal(14);
+    const first = $('.tag-list ul li a')[0].text;
+    const count = first.toLowerCase().includes('all') ? 15 : 14;
+    $('.tag-list ul li').length.should.equal(count);
   });
 
   it('should filter pictures by sorted tags', () => {
+    const freq1 = +$('.tag-list ul li a')[0].text.match(/[0-9]+/g);
+    const freq2 = +$('.tag-list ul li a')[1].text.match(/[0-9]+/g);
     $('.tag-list ul li a')[0].click();
-    $('.user-media-item').length.should.equal(15);
+    $('.user-media-item').length.should.equal(freq1);
     $('.tag-list ul li a')[1].click();
-    $('.user-media-item').length.should.equal(4);
+    $('.user-media-item').length.should.equal(freq2);
   });
 });

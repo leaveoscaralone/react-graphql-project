@@ -12,11 +12,9 @@ Because we operate in different time zones, some channels can have messages post
 
 ### Equipment
 
-To attend the course you need a laptop computer, with camera, mic, and speakers, to allow video calls and participate in live lectures.
+To attend the course you need a laptop computer, with camera, mic, and speakers, to allow video calls and participate in live class activities.
 
 If you signed up for an on-site course, you also need to bring a pair of noise-isolating or noise-cancelling earphones or headphones, with microphone. If they are battery-powered, make sure they can last for at least two hours.
-
-In case you want to buy new equipment, as a Codeworks on-site student you are entitled to [Apple discounts for Education](https://github.com/codeworks/students-handbook/wiki/Discounts).
 
 ### Software
 

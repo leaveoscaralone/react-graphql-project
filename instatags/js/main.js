@@ -137,6 +137,7 @@ $(function () {
       // First, you need to create an empty "a" link tag with jQuery. Remember the div we
       // created earlier in this assignment? It should give you some inspiration.
       // Then fill this tag content with the hashtag itself and its frequency.
+      // eg. '#canon (15)'
 
       // Now create a "li" tag and add the class "u-pull-left" to it.
       // In case you wonder this class is built-in in a CSS framework
