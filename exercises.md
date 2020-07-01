@@ -1,4 +1,4 @@
-# Codeworks Pre Course Exercises
+# Codeworks pre course exercises
 
 There are three exercises that you need to complete as part of the Codeworks pre course curriculum: Underline, Stringifier, and Instatags (go through them in this order).
 

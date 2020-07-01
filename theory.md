@@ -1,4 +1,4 @@
-# Codeworks Pre Course Theory
+# Codeworks pre course theory
 
 This is the theory part of the Codeworks pre course curriculum.
 
@@ -110,4 +110,3 @@ Once you have completed all the pre course curriculum, if you have free time lef
 - “Network”, “Storage”, “Mobile Simulation”, and “Performance” sections of the [Chrome DevTools tutorial](https://developers.google.com/web/tools/chrome-devtools/).
 - Start taking a look at frameworks ([Node](https://nodejs.org/en/about/), [Express](https://expressjs.com/), [Koa](http://koajs.com/), [React](https://reactjs.org/), [Angular](https://angular.io/)).
 - Read through any topic of your interest at [superhero.js](http://superherojs.com/).
-

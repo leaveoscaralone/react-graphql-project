@@ -1,4 +1,4 @@
-# Codeworks Pre Course
+# Codeworks pre course
 
 This pre course is important, because it allows all students in a class to have a solid common ground when the main course starts. Understanding the theory part and solving the exercises included here is required for you to proceed to the main course.
 
@@ -24,7 +24,7 @@ As you progress throughout this course you will be required to install other sof
 
 ## Course structure
 
-The pre course material is divided in two main parts: theory and exercises (as respectively described in the `theory.md`, and `exercises.md` files). We suggest you to start with theory sections from 1 to 6, and then do the exercises while you complete theory sections 7 and 8 on the side.
+The pre course material is divided in two main parts: theory and exercises (as respectively described in the [`theory.md`](/theory.md), and [`exercises.md`](/exercises.md) files). We suggest you to start with theory sections from 1 to 6, and then do the exercises while you complete theory sections 7 and 8 on the side.
 
 ## Study tips
 
