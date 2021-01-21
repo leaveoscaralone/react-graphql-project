@@ -1,6 +1,6 @@
 {
   "name": "codeworks-pre-course",
-  "version": "3.0.12",
+  "version": "3.0.13",
   "description": "The Codeworks Full Stack Pre Course Curriculum",
   "scripts": {
     "precommit": "gulp lint",

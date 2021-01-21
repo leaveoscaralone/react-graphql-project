@@ -10,7 +10,7 @@ For each exercise you find a separate folder in this repository, containing a re
 
 Whenever you’re stuck, feel free to look for information online (e.g. checking docs on [MDN](https://developer.mozilla.org/en/docs/Web), or reading answers on [Stack Overflow](http://stackoverflow.com/)). Make sure you don’t search for the entire exercise solution, as this would obviously defeat the course purpose.
 
-For example, when you’re implementing the `_.each()` function in Underline you might search online for information like “js iterate over object ignoring prototype“, but not things like “js how to implement each“.
+For example, when you’re implementing the `_.each()` function in Underline you might search online for information like “js iterate over object ignoring prototype”, but not things like “js how to implement each”.
 
 For the same reason obviously you’re not supposed to look up / copy the source code from an existing library, or from solutions implemented by other students.
 
@@ -106,9 +106,13 @@ git pull --rebase upstream master
 # Merge any conflicts if needed, otherwise you’re ready to send a pull request.
 ```
 
-To submit your work, go on GitHub and create a [pull request](https://help.github.com/articles/creating-a-pull-request/) from your fork to the original Codeworks repository (on the top you’ll see a button that says “New pull request“).
+To submit your work, go on GitHub and create a [pull request](https://help.github.com/articles/creating-a-pull-request/) from your fork to the original Codeworks repository (on the top you’ll see a button that says “New pull request”).
 
-When you complete the next exercises, check again if your fork is in sync with upstream as described above, then push your commits to `origin` and your previous pull request will automatically be updated.
+After you’ve submitted it, if on GitHub you see a red message that says “All checks have failed”, it simply means that some tests are still failing. This is normal when you have exercises left to complete. Otherwise, please check your tests locally as indicated in each exercise readme file and fix your code where necessary.
+
+When you complete a new exercise, check again if your fork is in sync with upstream as described above, then push your commits to `origin` and your previous pull request will automatically be updated.
+
+Be aware that we don’t check your code when you submit it. If you have questions you can join the group support sessions. On the other hand, we check all the class pre-course submissions before the main course starts, and we review the exercises together at the beginning of the main course.
 
 ## Start coding
 
