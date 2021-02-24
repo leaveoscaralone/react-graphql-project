@@ -1,11 +1,10 @@
 $(function () {
-
   // We need the user media throughout our code, so we store it in the outer scope.
   var userMedia;
 
   // This is @instagrames account ID, the instragrammer that
   // we're following for this coding assignment.
-  var USER_ID = '200482';
+  var USER_ID = '17841403377586680';
 
   window.Instagram.getUser(USER_ID, function (userData) {
     // Here you need to call the renderUserInfo() function.
@@ -54,6 +53,7 @@ $(function () {
   function extractTagsFromMedia (media) {
     // Here we create an object with all the hashtags as keys.
     // Then assign the value of every key to the frequency of that tag.
+
     var tagFrequency = {};
     media.forEach(function (mediaItem) {
       mediaItem.tags.forEach(function (tagId) {
@@ -71,7 +71,7 @@ $(function () {
     var tags = Object.keys(tagFrequency).map(function (tagId) {
       return {
         id: tagId,
-        frequency: tagFrequency[tagId]
+        frequency: tagFrequency[tagId],
       };
     });
     return tags;

@@ -29,7 +29,7 @@ window.Instagram = new function () {
     $.getJSON(
       'lib/userRecentMedia.json',
       function (response) {
-        cb(response.data);
+        cb(response);
       }
     );
   };

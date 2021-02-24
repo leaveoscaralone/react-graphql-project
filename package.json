@@ -1,10 +1,11 @@
 {
   "name": "codeworks-pre-course",
-  "version": "3.0.13",
+  "version": "3.1.0",
   "description": "The Codeworks Full Stack Pre Course Curriculum",
   "scripts": {
     "precommit": "gulp lint",
-    "test": "mocha underline/test && mocha stringifier/test && mocha instatags/test"
+    "test": "mocha underline/test && mocha stringifier/test && mocha instatags/test",
+    "populate:instatags": "node instatags/utilities/REMOVE/data-fetcher.js"
   },
   "repository": {
     "type": "git",
@@ -46,6 +47,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
+    "node-fetch": "^2.6.1",
     "skeleton-css": "^2.0.4"
   }
 }
