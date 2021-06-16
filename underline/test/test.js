@@ -109,7 +109,7 @@ describe('Objects', function () {
     it('should ignore the object prototype', function () {
       mocks.obj.constructor.prototype.foo = 'foo';
       _.extend(obj, mocks.obj);
-      obj.hasOwnProperty('foo').should.be.false;
+      Object.prototype.hasOwnProperty.call(obj, 'foo').should.be.false;
     });
 
   });
@@ -135,7 +135,7 @@ describe('Objects', function () {
     it('should ignore the object prototype', function () {
       mocks.obj.constructor.prototype.foo = undefined; // needs to be undefined to test properly with _.defaults()
       _.defaults(obj, mocks.obj);
-      obj.hasOwnProperty('foo').should.be.false;
+      Object.prototype.hasOwnProperty.call(obj, 'foo').should.be.false;
     });
 
   });
@@ -176,7 +176,7 @@ describe('Collections', function () {
     it('should ignore the object prototype', function () {
       mocks.obj.constructor.prototype.foo = 'foo';
       _.each(mocks.obj, function (val, key, obj) {
-        obj.hasOwnProperty(key).should.be.true;
+        Object.prototype.hasOwnProperty.call(obj, key).should.be.true;
         called = true;
       });
       called.should.be.true;
@@ -249,7 +249,7 @@ describe('Collections', function () {
     it('should ignore the object prototype', function () {
       mocks.obj.constructor.prototype.foo = 'foo';
       _.map(mocks.obj, function (val, key, obj) {
-        obj.hasOwnProperty(key).should.be.true;
+        Object.prototype.hasOwnProperty.call(obj, key).should.be.true;
         called = true;
       });
       called.should.be.true;
@@ -318,7 +318,7 @@ describe('Collections', function () {
     it('should ignore the object prototype', function () {
       mocks.obj.constructor.prototype.foo = 'foo';
       _.reduce(mocks.obj, function (accumulator, val, key, obj) {
-        obj.hasOwnProperty(key).should.be.true;
+        Object.prototype.hasOwnProperty.call(obj, key).should.be.true;
         called = true;
         return accumulator;
       });
@@ -383,7 +383,7 @@ describe('Collections', function () {
     it('should ignore the object prototype', function () {
       mocks.obj.constructor.prototype.foo = 'foo';
       _.filter(mocks.obj, function (val, key, obj) {
-        obj.hasOwnProperty(key).should.be.true;
+        Object.prototype.hasOwnProperty.call(obj, key).should.be.true;
         called = true;
       });
       called.should.be.true;
@@ -447,7 +447,7 @@ describe('Collections', function () {
     it('should ignore the object prototype', function () {
       mocks.obj.constructor.prototype.foo = 'foo';
       _.reject(mocks.obj, function (val, key, obj) {
-        obj.hasOwnProperty(key).should.be.true;
+        Object.prototype.hasOwnProperty.call(obj, key).should.be.true;
         called = true;
       });
       called.should.be.true;
@@ -509,7 +509,7 @@ describe('Collections', function () {
     it('should ignore the object prototype', function () {
       mocks.obj.constructor.prototype.foo = 'foo';
       _.every(mocks.obj, function (val, key, obj) {
-        obj.hasOwnProperty(key).should.be.true;
+        Object.prototype.hasOwnProperty.call(obj, key).should.be.true;
         called = true;
       });
       called.should.be.true;
@@ -571,7 +571,7 @@ describe('Collections', function () {
     it('should ignore the object prototype', function () {
       mocks.obj.constructor.prototype.foo = 'foo';
       _.some(mocks.obj, function (val, key, obj) {
-        obj.hasOwnProperty(key).should.be.true;
+        Object.prototype.hasOwnProperty.call(obj, key).should.be.true;
         called = true;
       });
       called.should.be.true;
