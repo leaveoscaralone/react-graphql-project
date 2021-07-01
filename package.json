@@ -1,6 +1,6 @@
 {
   "name": "codeworks-pre-course",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "The Codeworks Full Stack Pre Course Curriculum",
   "scripts": {
     "instatags": "gulp --gulpfile ./instatags/gulpfile.js",

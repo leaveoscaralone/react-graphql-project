@@ -64,7 +64,7 @@ Regex expressions are a powerful way to programmatically search and perform oper
 
 ## 5. Time to dig into terminal (10 hrs)
 
-Whether you’re working in a OS X, Unix, Linux or Windows (from version 10 upwards) environment, terminal is the main way programmers interact with the operating system.
+Whether you’re working in a OS X, Unix, or Linux environment (on Windows use the [WSL](https://docs.microsoft.com/en-us/windows/wsl/)), terminal is the main way programmers interact with the operating system.
 
 Learn this powerful tool and understand how the command line works through the [Linux tutorial](http://ryanstutorials.net/linuxtutorial/).
 
