@@ -6,12 +6,12 @@ var _ = {};
 // _.first(array, [n])
 // Returns an array with the first n elements of an array.
 // If n is not provided it returns an array with just the first element.
-_.first = function (array, n=1) {
+_.first = function (array, n) {
   // check if passed object is an array
   if (!array) {
-    return []
+    return [];
   }
-  if (!n ||n <= 0) {
+  if (!n || n <= 0) {
     n = 1
   }
   return Array.prototype.slice.call(array, 0, n)
@@ -21,6 +21,17 @@ _.first = function (array, n=1) {
 // Returns an array with the last n elements of an array.
 // If n is not provided it returns an array with just the last element.
 _.last = function (array, n) {
+  //check if passed object is an array
+  if (!array) {
+    return [];
+  }
+  if (n >= array.length) {
+    return array
+  }
+  if (!n || n <= 0) {
+    n = 1
+  }
+  return Array.prototype.slice.call(array, array.length - n, array.length)
 
 };
 
