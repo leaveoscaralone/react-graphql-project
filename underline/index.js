@@ -6,8 +6,15 @@ var _ = {};
 // _.first(array, [n])
 // Returns an array with the first n elements of an array.
 // If n is not provided it returns an array with just the first element.
-_.first = function (array, n) {
-
+_.first = function (array, n=1) {
+  // check if passed object is an array
+  if (!array) {
+    return []
+  }
+  if (!n ||n <= 0) {
+    n = 1
+  }
+  return Array.prototype.slice.call(array, 0, n)
 };
 
 // _.last(array, [n])
