@@ -54,7 +54,12 @@ _.uniq = function (array) {
 // Copies all the own enumerable properties in the source object over
 // to the destination object, and returns it (without using `Object.assign`).
 _.extend = function (destination, source) {
-
+  for (let key in source) {
+    if (Object.prototype.hasOwnProperty.call(source, key)) {
+      destination[key] = source[key]
+    }
+  }
+  return destination
 };
 
 // _.defaults(destination, source)
