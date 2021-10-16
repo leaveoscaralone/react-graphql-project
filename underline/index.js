@@ -84,7 +84,16 @@ _.defaults = function (destination, source) {
 // (element, index|key, collection), and bound to the context if one is passed.
 // Returns the collection for chaining.
 _.each = function (collection, iteratee, context) {
-
+  if (Array.isArray(collection)) {
+    for (let i in collection) {
+      iteratee.call(context, collection[i], parseInt(i), collection)
+    }
+  } else {
+    for (let key of Object.keys(collection)) {
+      iteratee.call(context, collection[key], key, collection)
+    }
+  }
+  return collection
 };
 
 // _.contains(collection, value)
