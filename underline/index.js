@@ -67,7 +67,13 @@ _.extend = function (destination, source) {
 // with own enumerable properties present in the source object,
 // and returns the destination object.
 _.defaults = function (destination, source) {
-
+  let dKeys = Object.keys(destination)
+  for (let sKeys in source) {
+    if (Object.prototype.hasOwnProperty.call(source, sKeys) && !dKeys.includes(sKeys)) {
+      destination[sKeys] = source[sKeys]
+    }
+  }
+  return destination
 };
 
 // COLLECTIONS
