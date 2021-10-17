@@ -134,7 +134,14 @@ _.map = function (collection, iteratee, context) {
 // to the initial invocation of reduce, iteratee is not invoked on the first element,
 // and the first element is instead passed as accumulator for the next invocation.
 _.reduce = function (collection, iteratee, accumulator, context) {
-
+  _.each(collection, function (val, i, array) {
+    if (!accumulator) {
+      accumulator = val;
+    } else {
+      accumulator = iteratee.call(context, accumulator, val, i, array);
+    }
+  });
+  return accumulator;
 };
 
 // _.filter(collection, predicate, [context])
@@ -142,7 +149,13 @@ _.reduce = function (collection, iteratee, accumulator, context) {
 // that pass a truth test (predicate). Predicate is called with three arguments:
 // (element, index|key, collection), and bound to the context if one is passed.
 _.filter = function (collection, predicate, context) {
-
+  let newArr = []
+  for (let key of Object.keys(collection)) {
+    if (predicate.call(context, collection[key], key, collection)) {
+      newArr.push(collection[key])
+    }
+  }
+  return newArr
 };
 
 // _.reject(collection, predicate, [context])
