@@ -112,7 +112,17 @@ _.contains = function (collection, value) {
 // Each invocation of iteratee is called with three arguments:
 // (element, index|key, collection), and bound to the context if one is passed.
 _.map = function (collection, iteratee, context) {
-
+  let newArr = []
+  if (Array.isArray(collection)) {
+    for (let i in collection) {
+      newArr.push(iteratee.call(context, collection[i], i, collection))
+    }
+  } else {
+    for (let key of Object.keys(collection)) {
+      newArr.push(iteratee.call(context, collection[key], key, collection))
+    }
+  }
+  return newArr
 };
 
 // _.reduce(collection, iteratee, [accumulator], [context])
