@@ -194,7 +194,10 @@ _.every = function (collection, predicate, context) {
 // Short-circuits and stops traversing the list if a true element is found.
 // TIP: what method that you have already implemented can be reused here?
 _.some = function (collection, predicate, context) {
-
+  let binded = predicate.bind(context)
+  return !_.every(collection, function (val, i, collection) {
+    return !binded(val, i, collection)
+  })
 };
 
 // _.invoke(collection, methodName, *arguments)
