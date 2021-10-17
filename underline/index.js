@@ -164,7 +164,10 @@ _.filter = function (collection, predicate, context) {
 // (element, index|key, collection), and bound to the context if one is passed.
 // TIP: can you reuse _.filter()?
 _.reject = function (collection, predicate, context) {
-
+  let binded = predicate.bind(context)
+  return _.filter(collection, function (val, i, collection){
+    return !binded(val, i, collection)
+  })
 };
 
 // _.every(collection, [predicate], [context])
@@ -175,7 +178,13 @@ _.reject = function (collection, predicate, context) {
 // TIP: without the short-circuiting you could reuse _.reduce(). Can you figure how?
 // Because of the short-circuiting though, you need to implement it in a similar way as you did at _.each.
 _.every = function (collection, predicate, context) {
-
+  let eval = true
+  _.each(collection, function (val, i, collection) {
+    if (!predicate.call(context, val, i, collection)) {
+      eval = false
+    }
+  })
+  return eval
 };
 
 // _.some(collection, [predicate], [context])
