@@ -218,7 +218,10 @@ _.invoke = function (collection, methodName, ...args) {
 // in the collection, and returns an array with all the values
 // corresponding to the property indicated by propertyName.
 _.pluck = function (collection, propertyName) {
-
+  return _.map(collection, function (val, i, collection) {
+    return val[propertyName]
+  }, 
+  context)
 };
 
 // FUNCTIONS
@@ -230,8 +233,17 @@ _.pluck = function (collection, propertyName) {
 // Useful for initialization functions, instead of having to set
 // a boolean flag and then check it later.
 _.once = function (func) {
+  let used = false
+  let result
+  return function () {
+    if (!used) {
+      used = true
+      result = func.apply(this, arguments)
+    }
+    return result
+  }
+}
 
-};
 
 // _.memoize(func)
 // Memoizes a given function by caching the computed result.
