@@ -204,8 +204,12 @@ _.some = function (collection, predicate, context) {
 // Returns an array with the results of calling the method
 // indicated by methodName on each value in the collection.
 // Any extra arguments passed to invoke will be forwarded on to the method invocation.
-_.invoke = function (collection, methodName) {
-
+_.invoke = function (collection, methodName, ...args) {
+  let newArr = []
+  for (let key of Object.keys(collection)) {
+    newArr.push(collection[key][methodName](...args))
+  }
+  return newArr
 };
 
 // _.pluck(collection, propertyName)
