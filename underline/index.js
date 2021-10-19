@@ -268,7 +268,10 @@ _.memoize = function (func) {
 // If you pass the optional arguments, they will be forwarded
 // on to the function when it is invoked.
 _.delay = function (func, wait) {
-
+  let arg = Array.prototype.slice.call(arguments, 2)
+  setTimeout(function() {
+    func.apply(this, arg)
+  }, wait)
 };
 
 // _.throttle(function, wait)
