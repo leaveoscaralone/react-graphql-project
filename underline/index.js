@@ -269,7 +269,7 @@ _.memoize = function (func) {
 // on to the function when it is invoked.
 _.delay = function (func, wait) {
   let arg = Array.prototype.slice.call(arguments, 2)
-  setTimeout(function() {
+  setTimeout(function () {
     func.apply(this, arg)
   }, wait)
 };
@@ -281,8 +281,21 @@ _.delay = function (func, wait) {
 // the last computed result. Useful for rate-limiting events
 // that occur faster than you can keep up with.
 _.throttle = function (func, wait) {
-
-};
+  let used = false
+  let result
+  return function () {
+    let args = Array.prototype.slice.call(arguments)
+    if (!used) {
+      used = true
+      result = func.apply(this, args)
+      setTimeout(function () {
+        used = false
+      }, wait)
+    }
+    return result
+  }
+}
+  
 
 // Allow tests to run on the server (leave at the bottom)
 if (typeof window === 'undefined') {
