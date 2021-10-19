@@ -253,7 +253,14 @@ _.once = function (func) {
 // will check if it has already computed the result for the given argument
 // and return that value instead of recomputing it.
 _.memoize = function (func) {
-
+  let results = {}
+  return function() {
+    let arg = Array.prototype.join.call(arguments, '_')
+    if (!results[arg]) {
+      results[arg] = func.apply(this, arguments)
+    }
+    return results[arg]
+  }
 };
 
 // _.delay(function, wait, *arguments)
