@@ -8,10 +8,12 @@ function stringifier (input) {
     case 'string':
       return `"${input}"`
     case 'object':
-      if (Array.isArray(input)) {
-        return `[${input.toString()}]`
-      } else if (!input) {
+      if (!input) {
         return 'null'
+      }
+      if (Array.isArray(input)) {
+        let arrString = input.map(stringifier).map(arrVal => !arrVal ? 'null' : arrVal)
+        return `[${arrString}]`
       } else {
       for (let [key, value] of Object.entries(input)) {
         return `{${stringifier(key)}: ${stringifier(value)}}`
