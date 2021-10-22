@@ -12,12 +12,16 @@ function stringifier (input) {
         return 'null'
       }
       if (Array.isArray(input)) {
-        let arrString = input.map(stringifier).map(arrVal => !arrVal ? 'null' : arrVal)
+        let arrString = input.map(stringifier).map(arrVal => !arrVal ? 'null' : arrVal) //applies stringify to each value, if undefined it returns 'null'
         return `[${arrString}]`
-      } else {
-      for (let [key, value] of Object.entries(input)) {
-        return `{${stringifier(key)}: ${stringifier(value)}}`
-      }
+      } else { 
+        let arrObject = []
+        for (let key in input) {
+          if (Object.prototype.hasOwnProperty.call(input, key) && input[key] !== undefined && typeof(input[key]) !== 'function' ) {
+            arrObject.push(stringifier(key) + ':' + stringifier(input[key]))
+          }
+        } 
+        return '{' + arrObject.join(',') + '}'
     }
   }
 }
