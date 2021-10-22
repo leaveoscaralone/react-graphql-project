@@ -11,7 +11,7 @@ $(function () {
     // As you guess from its name, it's used to render the user information on page.
     // Can you figure out what parameter you should to pass to it?
     // If you do things right, you'll see the profile picture appear.
-
+    renderUserInfo(userData)
     // Mmm... what about the other user info? Go fix the renderUserInfo function!
   });
 
@@ -20,7 +20,7 @@ $(function () {
     userMedia = media;
     // Here we're rendering the user pictures. But something is not
     // ok in this function. Let's go there and fix it.
-    renderUserMedia(media);
+    renderUserMedia(userMedia);
 
     // Now that our project starts to look fancy let's add a bit of extra
     // functionality to it. We'll show a list with all the user's hashtags.
@@ -41,7 +41,10 @@ $(function () {
     // where "tags" is the sorted array of hashtags, and "minFrequency"
     // is a number representing the minimum frequency allowed, in this case, we will pass 2.
     // It returns a new array of hastags with frequency equal or above the set limit.
-
+    function frequentTags (tags, minfq) {
+      return tags.filter(tag => tag.frequency >= minfq)
+    }
+    let filteredTags = frequentTags(sortedTags, 2)
     // Guess what? Another render function that is broken!
     // Let's go and fix it.
     renderTags(filteredTags);
@@ -82,13 +85,16 @@ $(function () {
   // figure out how to create the right sort function.
   // 💯 Extra credit: Change the function, so it doesn't modify the original array!
   function sortTagsByFrequencyDesc (tags) {
-
+    return tags.sort((a, b) => b.frequency - a.frequency)
   }
 
   function renderUserInfo (user) {
     // This is how the user profile picture is rendered.
     $('#user img').attr('src', user.profile_picture);
-
+    $('h1').text(user.username)
+    $('#num-media').text(user.counts.media)
+    $('#num-followers').text(user.counts.followed_by)
+    $('#num-follows').text(user.counts.follows)
     // Now figure out how to render the remaining user information.
     // For example the h1 title should show the username. And the other fields
     // need to show the number of followers, follows, and posted images.
@@ -111,18 +117,18 @@ $(function () {
       // In order to nicely render this div, here you need to add
       // two CSS classes to it: "user-media-item" and "u-pull-left".
       // Figure out how to do it by digging into the jQuery docs.
-
+      $(div).addClass('user-media-item u-pull-left')
       // We want to show all the pictures as squares, even when they originally
       // have round borders. For this we use a CSS technique that sets the picture
       // as the background image of the element (feel free to check the CSS rules
       // that have been set for ".user-media-item" if you're curious about it).
       // Now add the "background-image" CSS property to the div using jQuery
       // and assign the correct value to it.
-
+      $(div).css('background-image', 'url(' + mediaItem.media_url + ')')
       // Finally you have to append the div we just created into the
       // ".user-media" div. Notice that the jQuery append function
       // accepts other jQuery objects.
-
+      $('.user-media').append(div)
       // Ok, now go back and continue checking the code from where you left before
       // fixing this function. Btw, we're not going to mention this anymore,
       // as by now navigating code should look familiar to you.
