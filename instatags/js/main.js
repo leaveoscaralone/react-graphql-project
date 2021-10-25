@@ -144,15 +144,17 @@ $(function () {
       // created earlier in this assignment? It should give you some inspiration.
       // Then fill this tag content with the hashtag itself and its frequency.
       // eg. '#canon (15)'
-
+      let a = $('<a>')
+      a = a.text('#' + tag.id + ' (' + tag.frequency + ')')
       // Now create a "li" tag and add the class "u-pull-left" to it.
       // In case you wonder this class is built-in in a CSS framework
       // we're using here: skeleton css (http://getskeleton.com/).
       // Then, add the "a" tag we just created to the "li" content.
-
+      let li = $('<li>')
+      li = li.addClass('u-pull-left')
+      li.append(a)
       // Finally append the "li" to the tag list.
       tagList.append(li);
-
       // Now let's add a bit of action. We want the user to be able to filter the images
       // by clicking on the tags in the list. For this we need to bind the click event
       // on the "a" tag to the "handleClickTag" function we have here below.
@@ -164,7 +166,9 @@ $(function () {
       a.data('tagId', tag.id);
       // Here you need to bind the click event of the "a" tag to the "handleClickTag" function.
       // Then, go to the function declaration to fix it.
-
+      a.on('click', function (event) {
+        handleClickTag(event)
+      })
     });
   }
 
@@ -181,9 +185,14 @@ $(function () {
 
     // Once we know what tag the user clicked, we can filter the images. You need to create
     // a function that returns an array containing only images with a certain tag.
+    function selectedImages (image) {
+      let images = userMedia.filter(pic => pic.tags.includes(image))
+      return images
 
+    }
+    let filteredImages = selectedImages(tagId)
     // Ok, finally you can re-render the filtered media here!
-
+    renderUserMedia(filteredImages)
   }
 
 });
